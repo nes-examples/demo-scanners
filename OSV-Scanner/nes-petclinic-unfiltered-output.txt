@@ -1,0 +1,19 @@
++-------------------------------------+------+-----------+-----------------------------------------+--------------------------------+------------------+
+| OSV URL                             | CVSS | ECOSYSTEM | PACKAGE                                 | VERSION                        | SOURCE           |
++-------------------------------------+------+-----------+-----------------------------------------+--------------------------------+------------------+
+| https://osv.dev/GHSA-22wj-vf5f-wrvj | 7.8  | Maven     | com.h2database:h2                       | 2.1.214                        | ../sbom.cdx.json |
+| https://osv.dev/GHSA-h46c-h94j-95f3 | 8.7  | Maven     | com.fasterxml.jackson.core:jackson-core | 2.13.5                         | ../sbom.cdx.json |
+| https://osv.dev/GHSA-6v67-2wr5-gvf4 | 2.4  | Maven     | ch.qos.logback:logback-core             | 1.2.13                         | ../sbom.cdx.json |
+| https://osv.dev/GHSA-pr98-23f8-jwxv | 5.9  | Maven     | ch.qos.logback:logback-core             | 1.2.13                         | ../sbom.cdx.json |
+| https://osv.dev/GHSA-m6vm-37g8-gqvh | 8.9  | Maven     | mysql:mysql-connector-java              | 8.0.30                         | ../sbom.cdx.json |
+| https://osv.dev/GHSA-4gg5-vx3j-xwc7 | 7.5  | Maven     | com.google.protobuf:protobuf-java       | 3.19.4                         | ../sbom.cdx.json |
+| https://osv.dev/GHSA-735f-pc8j-v9w8 | 8.7  | Maven     | com.google.protobuf:protobuf-java       | 3.19.4                         | ../sbom.cdx.json |
+| https://osv.dev/GHSA-g5ww-5jh7-63cx | 7.5  | Maven     | com.google.protobuf:protobuf-java       | 3.19.4                         | ../sbom.cdx.json |
+| https://osv.dev/GHSA-h4h5-3hr4-j3g2 | 5.7  | Maven     | com.google.protobuf:protobuf-java       | 3.19.4                         | ../sbom.cdx.json |
+| https://osv.dev/GHSA-mjmj-j48q-9wg2 | 8.3  | Maven     | org.yaml:snakeyaml                      | 1.33                           | ../sbom.cdx.json |
+| https://osv.dev/GHSA-rc42-6c7j-7h5r | 7.3  | Maven     | org.springframework.boot:spring-boot    | 2.7.18-spring-boot-2.7.27      | ../sbom.cdx.json |
+| https://osv.dev/GHSA-4gc7-5j7h-4qph | 5.3  | Maven     | org.springframework:spring-context      | 5.3.39-spring-framework-5.3.46 | ../sbom.cdx.json |
+| https://osv.dev/GHSA-4gc7-5j7h-4qph | 5.3  | Maven     | org.springframework:spring-web          | 5.3.39-spring-framework-5.3.46 | ../sbom.cdx.json |
+| https://osv.dev/GHSA-4wrc-f8pq-fpqp | 9.8  | Maven     | org.springframework:spring-web          | 5.3.39-spring-framework-5.3.46 | ../sbom.cdx.json |
+| https://osv.dev/GHSA-w3c8-7r8f-9jp8 | 5.3  | Maven     | org.springframework:spring-webmvc       | 5.3.39-spring-framework-5.3.46 | ../sbom.cdx.json |
++-------------------------------------+------+-----------+-----------------------------------------+--------------------------------+------------------+

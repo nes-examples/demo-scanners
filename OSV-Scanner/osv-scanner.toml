@@ -1,0 +1,26 @@
+[[IgnoredVulns]]
+id = "GHSA-rc42-6c7j-7h5r"
+# CVE-2025-22235
+# https://www.herodevs.com/vulnerability-directory/cve-2025-22235?nes-for-spring
+reason = "HeroDevs Remediated in 2.7.18-spring-boot-2.7.25"
+# https://docs.herodevs.com/spring/release-notes/spring-boot#2-7-25
+
+[[IgnoredVulns]]
+id = "GHSA-4gc7-5j7h-4qph"
+# CVE-2024-38820
+# https://www.herodevs.com/vulnerability-directory/cve-2024-38820?nes-for-spring
+reason = "HeroDevs Remediated in 5.3.39-spring-framework-5.3.42"
+# https://docs.herodevs.com/spring/release-notes/spring-framework#5-3-42
+
+[[IgnoredVulns]]
+id = "GHSA-w3c8-7r8f-9jp8"
+# CVE-2024-38828
+# https://www.herodevs.com/vulnerability-directory/cve-2024-38828?nes-for-spring
+reason = "HeroDevs Remediated in 5.3.39-spring-framework-5.3.44"
+# https://docs.herodevs.com/spring/release-notes/spring-framework#5-3-44
+
+[[IgnoredVulns]]
+id = "GHSA-4wrc-f8pq-fpqp"
+# CVE-2016-1000027
+# https://www.herodevs.com/vulnerability-directory/cve-2016-1000027?nes-for-spring
+reason = "Not applicable"
