@@ -1,10 +1,10 @@
 # OSV-Scanner
 
-This section provides instructions how to use [OSV-Scanner](https://github.com/google/osv-scanner) to check for vulnerabilities in the dependencies of the Spring PetClinic application.
+This section provides instructions on how to use [OSV-Scanner](https://github.com/google/osv-scanner) to check for vulnerabilities in the dependencies of the Spring PetClinic application.
 
 ## Installing OSV-Scanner
 
-OSV-Scanner must be installed on you machine to properly use the tool. To do this, on a Mac you can you can use [Homebrew](https://brew.sh/) to install it:
+OSV-Scanner must be installed on your machine to properly use the tool. To do this, on a Mac you can use [Homebrew](https://brew.sh/) to install it:
 
 ```bash
 brew install osv-scanner
@@ -31,7 +31,7 @@ The results produced above will show all vulnerabilities that OSV-Scanner identi
 
 OSV-Scanner has a [configuration option](https://google.github.io/osv-scanner/configuration/) to exclude certain vulnerabilities from the scan. This is useful when you want to ignore known vulnerabilities that have been remediated in the HeroDevs artifacts.
 
-A configuration file name `osv-scanner.toml` has been provided. To run OSV-Scanner with the appropriate exclusions, run the following command from the `docs` directory:
+A configuration file named `osv-scanner.toml` has been provided. To run OSV-Scanner with the appropriate exclusions, run the following command from the `OSV-Scanner` directory:
 
 ```bash
 osv-scanner scan source --sbom=../nes-petclinic.sbom.cdx.json --output=nes-petclinic-output.txt --config=./osv-scanner.toml
