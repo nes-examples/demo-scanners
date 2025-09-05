@@ -4,11 +4,10 @@ This section provides instructions on how to use [OSV-Scanner](https://github.co
 
 ## Installing OSV-Scanner
 
-OSV-Scanner must be installed on your machine to properly use the tool. To do this, on a Mac you can use [Homebrew](https://brew.sh/) to install it:
+OSV-Scanner must be installed on your machine to properly use the tool.
+See the [OSV-Scanner documentation](https://google.github.io/osv-scanner/installation/) for installation instructions.
 
-```bash
-brew install osv-scanner
-```
+[Binaries are available](https://github.com/google/osv-scanner/releases) for most platforms, as well as packages for [Homebrew](https://brew.sh/) on macOS and Linux and [Scoop](https://scoop.sh/) for Windows.
 
 Test that the installation was successful by running:
 
@@ -16,25 +15,32 @@ Test that the installation was successful by running:
 osv-scanner --version
 ```
 
+> [!NOTE]
+> The instructions in this document are for use with OSV-Scanner version 2.2.1 or greater. Command line arguments might be different for older versions.
+
 ## Scanning the SBOM Without Exclusions
 
 To scan the SBOM for vulnerabilities, run the following commands:
 
 ```bash
-osv-scanner scan source --sbom=../oss-petclinic.sbom.cdx.json --output=oss-petclinic-output.txt
-osv-scanner scan source --sbom=../nes-petclinic.sbom.cdx.json --output=nes-petclinic-unfiltered-output.txt
+osv-scanner scan source --lockfile=../oss-petclinic.sbom.cdx.json --output=oss-petclinic-output.txt
+osv-scanner scan source --lockfile=../nes-petclinic.sbom.cdx.json --output=nes-petclinic-unfiltered-output.txt
 ```
 
-The results produced above will show all vulnerabilities that OSV-Scanner identifies. OSV-Scanner does not inherently recognize HeroDevs packages, so some CVEs that have been remediated are mistakenly included in the output. These are false positives and should not be considered in the final security evaluation.
+The results produced above will show all vulnerabilities that OSV-Scanner identifies. 
+OSV-Scanner does not inherently recognize HeroDevs packages, so some CVEs that have been remediated are mistakenly included in the output. 
+These are false positives and should not be considered in the final security evaluation.
 
 ## Scanning the SBOM With Exclusions
 
-OSV-Scanner has a [configuration option](https://google.github.io/osv-scanner/configuration/) to exclude certain vulnerabilities from the scan. This is useful when you want to ignore known vulnerabilities that have been remediated in the HeroDevs artifacts.
+OSV-Scanner has a [configuration option](https://google.github.io/osv-scanner/configuration/) to exclude certain vulnerabilities from the scan. 
+This is useful when you want to ignore known vulnerabilities that have been remediated in the HeroDevs artifacts.
 
-A configuration file named `osv-scanner.toml` has been provided. To run OSV-Scanner with the appropriate exclusions, run the following command from the `OSV-Scanner` directory:
+A configuration file named `osv-scanner.toml` has been provided. 
+To run OSV-Scanner with the appropriate exclusions, run the following command from the `OSV-Scanner` directory:
 
 ```bash
-osv-scanner scan source --sbom=../nes-petclinic.sbom.cdx.json --output=nes-petclinic-output.txt --config=./osv-scanner.toml
+osv-scanner scan source --lockfile=../nes-petclinic.sbom.cdx.json --output=nes-petclinic-output.txt --config=./osv-scanner.toml
 ```
 
 > [!IMPORTANT]
