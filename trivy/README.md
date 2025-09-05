@@ -4,37 +4,39 @@ This section provides and overview on using the [Trivy scanner](https://github.c
 
 ## Setup
 
-For this tutorial, follow the [Getting Started guide](https://trivy.dev/latest/getting-started/) for installing trivy on your machine. 
-
-```bash
-brew install trivy
-```
-
-Check the version. Note that this guide is using version Trviy version 0.65.0.
+For this tutorial, follow the [Getting Started guide](https://trivy.dev/latest/getting-started/) for installing trivy on your machine.
+Check the version.
 
 ```bash
 trivy --version
 ```
+
+> [!NOTE]
+> The instructions in this document are for use with Trivy version 0.65.0.or greater. Command line arguments might be different for older versions.
+
 
 ## Scanning the SBOM Without Exclusions
 
 To scan the SBOM for vulnerabilities, run the following commands:
 
 ```bash
-trivy sbom oss-petclinic.sbom.cdx.json --output trivy/oss-petclinic-output.txt
-trivy sbom nes-petclinic.sbom.cdx.json --output trivy/nes-petclinic-unfiltered-output.txt
+trivy sbom ../oss-petclinic.sbom.cdx.json --output oss-petclinic-output.txt
+trivy sbom ../nes-petclinic.sbom.cdx.json --output nes-petclinic-unfiltered-output.txt
 ```
 
-The results produced in the above output will show all vulnerabilities that Trivy identifies. Trivy does not inherently recognize HeroDevs packages, so some CVEs that have been remediated are mistakenly included in the output. These are false positives and should not be considered in the final security evaluation.
+The results produced in the above output will show all vulnerabilities that Trivy identifies. 
+Trivy does not inherently recognize HeroDevs packages, so some CVEs that have been remediated are mistakenly included in the output. 
+These are false positives and should not be considered in the final security evaluation.
 
 ## Scanning the SBOM With Vex Statements
 
-Note, at the time of this writing, Trivy's current support (version 0.65.0) of Vex is experimental. This demo will utilize the [OpenVEX](https://github.com/openvex/spec) format for VEX statements.
+> [!NOTE]
+> At the time of this writing, Trivy's current support (version 0.65.0) of Vex is experimental. This demo will use the [OpenVEX](https://github.com/openvex/spec) format for VEX statements.
 
 A series of Vex statements have been added to capture the CVE patches by HeroDevs in the `herodevs-vex.json` file.
 
 ```bash
-trivy sbom nes-petclinic.sbom.cdx.json --vex trivy/herodevs-vex.json --output trivy/nes-petclinic-output.txt
+trivy sbom ../nes-petclinic.sbom.cdx.json --vex herodevs-vex.json --output nes-petclinic-output.txt
 ```
 
 > [!IMPORTANT]
@@ -45,4 +47,14 @@ With this output, we can compare `nes-petclinic-output.txt` to `oss-petclinic-ou
 
 ## Scanning the SBOM With Trivy Exclusions
 
-_To do..._
+It's possible to [filter results](https://trivy.dev/v0.48/docs/configuration/filtering/) during a Trivy scan; for example:
+
+```bash
+trivy sbom ../nes-petclinic.sbom.cdx.json --ignorefile ./.trivyignore.yaml --output nes-petclinic-output.txt
+```
+
+The output will be strictly the same as the previous example with Vex statements.
+
+> [!NOTE]
+> While the result is similar, we believe the Vex statements to be preferable for a vendor to share fixed vulnerabilities with their customers.
+> Filtering / exclusions could be a good fit for local policy-based suppressions.
