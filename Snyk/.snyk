@@ -1,0 +1,96 @@
+version: v1.5.0
+ignore:
+  'SNYK-JAVA-ORGSPRINGFRAMEWORKBOOT-9804539':
+    - '*':
+        # GHSA-rc42-6c7j-7h5r
+        # CVE-2025-22235
+        # https://www.herodevs.com/vulnerability-directory/cve-2025-22235?nes-for-spring
+        reason: 'HeroDevs Remediated in 2.7.18-spring-boot-2.7.25'
+        # https://docs.herodevs.com/spring/release-notes/spring-boot#2-7-25
+
+  'SNYK-JAVA-ORGSPRINGFRAMEWORK-8230364':
+    - '*':
+        # GHSA-4gc7-5j7h-4qph
+        # CVE-2024-38820
+        # https://www.herodevs.com/vulnerability-directory/cve-2024-38820?nes-for-spring
+        reason: 'HeroDevs Remediated in spring-context 5.3.39-spring-framework-5.3.42'
+        # https://docs.herodevs.com/spring/release-notes/spring-framework#5-3-42
+
+  'SNYK-JAVA-ORGSPRINGFRAMEWORK-8230365':
+    - '*':
+        # GHSA-4gc7-5j7h-4qph
+        # CVE-2024-38820
+        # https://www.herodevs.com/vulnerability-directory/cve-2024-38820?nes-for-spring
+        reason: 'HeroDevs Remediated in spring-core 5.3.39-spring-framework-5.3.42'
+        # https://docs.herodevs.com/spring/release-notes/spring-framework#5-3-42
+
+  'SNYK-JAVA-ORGSPRINGFRAMEWORK-8230366':
+    - '*':
+        # GHSA-4gc7-5j7h-4qph
+        # CVE-2024-38820
+        # https://www.herodevs.com/vulnerability-directory/cve-2024-38820?nes-for-spring
+        reason: 'HeroDevs Remediated in spring-web 5.3.39-spring-framework-5.3.42'
+        # https://docs.herodevs.com/spring/release-notes/spring-framework#5-3-42
+
+  'SNYK-JAVA-ORGSPRINGFRAMEWORK-8230367':
+    - '*':
+        # GHSA-4gc7-5j7h-4qph
+        # CVE-2024-38820
+        # https://www.herodevs.com/vulnerability-directory/cve-2024-38820?nes-for-spring
+        reason: 'HeroDevs Remediated in spring-webflux 5.3.39-spring-framework-5.3.42'
+        # https://docs.herodevs.com/spring/release-notes/spring-framework#5-3-42
+
+  'SNYK-JAVA-ORGSPRINGFRAMEWORK-8230368':
+    - '*':
+        # GHSA-4gc7-5j7h-4qph
+        # CVE-2024-38820
+        # https://www.herodevs.com/vulnerability-directory/cve-2024-38820?nes-for-spring
+        reason: 'HeroDevs Remediated in spring-webmvc 5.3.39-spring-framework-5.3.42'
+        # https://docs.herodevs.com/spring/release-notes/spring-framework#5-3-42
+
+  'SNYK-JAVA-ORGSPRINGFRAMEWORK-8230369':
+    - '*':
+        # GHSA-4gc7-5j7h-4qph
+        # CVE-2024-38820
+        # https://www.herodevs.com/vulnerability-directory/cve-2024-38820?nes-for-spring
+        reason: 'HeroDevs Remediated in spring-websocket 5.3.39-spring-framework-5.3.42'
+        # https://docs.herodevs.com/spring/release-notes/spring-framework#5-3-42
+
+  'SNYK-JAVA-IOSPRINGFOX-8383387':
+    - '*':
+        # GHSA-w3c8-7r8f-9jp8
+        # CVE-2024-38828
+        # https://www.herodevs.com/vulnerability-directory/cve-2024-38828?nes-for-spring
+        reason: 'HeroDevs Remediated in 5.3.39-spring-framework-5.3.44'
+        # https://docs.herodevs.com/spring/release-notes/spring-framework#5-3-44
+
+  'SNYK-JAVA-ORGSPRINGFRAMEWORK-570456':
+    - '*':
+        # GHSA-4wrc-f8pq-fpqp
+        # CVE-2016-1000027
+        # https://www.herodevs.com/vulnerability-directory/cve-2016-1000027?nes-for-spring
+        reason: 'Not applicable'
+
+  'SNYK-JAVA-ORGSPRINGFRAMEWORK-7945490':
+    - '*':
+        # CVE-2024-38816
+        # https://www.herodevs.com/vulnerability-directory/cve-2024-38816?nes-for-spring
+        reason: 'HeroDevs Remediated in 5.3.39-spring-framework-5.3.41'
+
+  'SNYK-JAVA-ORGSPRINGFRAMEWORK-8230373':
+    - '*':
+        # CVE-2024-38819
+        # https://www.herodevs.com/vulnerability-directory/cve-2024-38819?nes-for-spring
+        reason: 'HeroDevs Remediated in 5.3.39-spring-framework-5.3.42'
+
+  'SNYK-JAVA-ORGSPRINGFRAMEWORK-12008931':
+    - '*':
+        # CVE-2025-41242
+        # https://www.herodevs.com/vulnerability-directory/cve-2025-41242?nes-for-spring
+        reason: 'HeroDevs Remediated in 5.3.39-spring-framework-5.3.47'
+
+  'SNYK-JAVA-ORGSPRINGFRAMEWORK-8384234':
+    - '*':
+        # CVE-2024-38828
+        # https://www.herodevs.com/vulnerability-directory/cve-2024-38828?nes-for-spring
+        reason: 'HeroDevs Remediated in 5.3.39-spring-framework-5.3.44'

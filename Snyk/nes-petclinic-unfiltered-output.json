@@ -1,0 +1,755 @@
+{
+  "ok": false,
+  "dependencyCount": 86,
+  "summary": "Found 25 issues",
+  "vulnerabilities": [
+    {
+      "creationTime": "2024-12-20T09:18:30Z",
+      "disclosureTime": "2024-12-19T18:31:37Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-CHQOSLOGBACK-8539865",
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-12801"
+        ],
+        "CWE": [
+          "CWE-918"
+        ]
+      },
+      "modificationTime": "2025-01-09T15:37:00Z",
+      "packageName": "ch.qos.logback/logback-core",
+      "packageUrl": "pkg:maven/ch.qos.logback/logback-core@1.2.13?type=jar",
+      "publicationTime": "2024-12-20T09:26:25Z",
+      "semver": {
+        "vulnerable": [
+          "1.2.13"
+        ]
+      },
+      "severity": "low",
+      "severityWithCritical": "low",
+      "title": "Server-side Request Forgery (SSRF)",
+      "version": "1.2.13",
+      "name": "ch.qos.logback/logback-core",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H",
+      "cvssScore": 2.4
+    },
+    {
+      "creationTime": "2024-10-18T09:17:42Z",
+      "disclosureTime": "2024-10-17T00:00:00Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-ORGSPRINGFRAMEWORK-8230364",
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-38820"
+        ],
+        "CWE": [
+          "CWE-178"
+        ]
+      },
+      "modificationTime": "2025-01-05T16:36:40Z",
+      "packageName": "org.springframework/spring-context",
+      "packageUrl": "pkg:maven/org.springframework/spring-context@5.3.39-spring-framework-5.3.46?type=jar",
+      "publicationTime": "2024-10-18T09:38:03Z",
+      "semver": {
+        "vulnerable": [
+          "5.3.39-spring-framework-5.3.46"
+        ]
+      },
+      "severity": "low",
+      "severityWithCritical": "low",
+      "title": "Improper Handling of Case Sensitivity",
+      "version": "5.3.39-spring-framework-5.3.46",
+      "name": "org.springframework/spring-context",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N",
+      "cvssScore": 2.3
+    },
+    {
+      "creationTime": "2024-10-18T09:17:43Z",
+      "disclosureTime": "2024-10-17T00:00:00Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-ORGSPRINGFRAMEWORK-8230365",
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-38820"
+        ],
+        "CWE": [
+          "CWE-178"
+        ]
+      },
+      "modificationTime": "2025-01-05T16:36:40Z",
+      "packageName": "org.springframework/spring-core",
+      "packageUrl": "pkg:maven/org.springframework/spring-core@5.3.39-spring-framework-5.3.46?type=jar",
+      "publicationTime": "2024-10-18T09:38:03Z",
+      "semver": {
+        "vulnerable": [
+          "5.3.39-spring-framework-5.3.46"
+        ]
+      },
+      "severity": "low",
+      "severityWithCritical": "low",
+      "title": "Improper Handling of Case Sensitivity",
+      "version": "5.3.39-spring-framework-5.3.46",
+      "name": "org.springframework/spring-core",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N",
+      "cvssScore": 2.3
+    },
+    {
+      "creationTime": "2024-10-18T09:17:43Z",
+      "disclosureTime": "2024-10-17T00:00:00Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-ORGSPRINGFRAMEWORK-8230366",
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-38820"
+        ],
+        "CWE": [
+          "CWE-178"
+        ]
+      },
+      "modificationTime": "2025-01-05T16:36:40Z",
+      "packageName": "org.springframework/spring-web",
+      "packageUrl": "pkg:maven/org.springframework/spring-web@5.3.39-spring-framework-5.3.46?type=jar",
+      "publicationTime": "2024-10-18T09:38:04Z",
+      "semver": {
+        "vulnerable": [
+          "5.3.39-spring-framework-5.3.46"
+        ]
+      },
+      "severity": "low",
+      "severityWithCritical": "low",
+      "title": "Improper Handling of Case Sensitivity",
+      "version": "5.3.39-spring-framework-5.3.46",
+      "name": "org.springframework/spring-web",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N",
+      "cvssScore": 2.3
+    },
+    {
+      "creationTime": "2024-10-18T09:17:44Z",
+      "disclosureTime": "2024-10-17T00:00:00Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-ORGSPRINGFRAMEWORK-8230368",
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-38820"
+        ],
+        "CWE": [
+          "CWE-178"
+        ]
+      },
+      "modificationTime": "2025-01-05T16:36:40Z",
+      "packageName": "org.springframework/spring-webmvc",
+      "packageUrl": "pkg:maven/org.springframework/spring-webmvc@5.3.39-spring-framework-5.3.46?type=jar",
+      "publicationTime": "2024-10-18T09:38:03Z",
+      "semver": {
+        "vulnerable": [
+          "5.3.39-spring-framework-5.3.46"
+        ]
+      },
+      "severity": "low",
+      "severityWithCritical": "low",
+      "title": "Improper Handling of Case Sensitivity",
+      "version": "5.3.39-spring-framework-5.3.46",
+      "name": "org.springframework/spring-webmvc",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N",
+      "cvssScore": 2.3
+    },
+    {
+      "creationTime": "2024-12-20T09:32:47Z",
+      "disclosureTime": "2024-12-19T18:31:37Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-CHQOSLOGBACK-8539866",
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-12798"
+        ],
+        "CWE": [
+          "CWE-138"
+        ]
+      },
+      "modificationTime": "2025-01-09T15:34:31Z",
+      "packageName": "ch.qos.logback/logback-core",
+      "packageUrl": "pkg:maven/ch.qos.logback/logback-core@1.2.13?type=jar",
+      "publicationTime": "2024-12-20T13:49:24Z",
+      "semver": {
+        "vulnerable": [
+          "1.2.13"
+        ]
+      },
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "title": "Improper Neutralization of Special Elements",
+      "version": "1.2.13",
+      "name": "ch.qos.logback/logback-core",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:L/I:H/A:L",
+      "cvssScore": 5.9
+    },
+    {
+      "creationTime": "2024-12-20T09:32:47Z",
+      "disclosureTime": "2024-12-19T18:31:37Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-CHQOSLOGBACK-8539867",
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-12798"
+        ],
+        "CWE": [
+          "CWE-138"
+        ]
+      },
+      "modificationTime": "2025-01-09T15:34:31Z",
+      "packageName": "ch.qos.logback/logback-classic",
+      "packageUrl": "pkg:maven/ch.qos.logback/logback-classic@1.2.13?type=jar",
+      "publicationTime": "2024-12-20T13:49:24Z",
+      "semver": {
+        "vulnerable": [
+          "1.2.13"
+        ]
+      },
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "title": "Improper Neutralization of Special Elements",
+      "version": "1.2.13",
+      "name": "ch.qos.logback/logback-classic",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:L/I:H/A:L",
+      "cvssScore": 5.9
+    },
+    {
+      "creationTime": "2022-10-05T07:33:08Z",
+      "disclosureTime": "2022-10-04T22:17:15Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-COMGOOGLEPROTOBUF-3040284",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3171"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "modificationTime": "2024-03-11T09:52:24Z",
+      "packageName": "com.google.protobuf/protobuf-java",
+      "packageUrl": "pkg:maven/com.google.protobuf/protobuf-java@3.19.4?type=jar",
+      "publicationTime": "2022-10-05T07:34:19Z",
+      "semver": {
+        "vulnerable": [
+          "3.19.4"
+        ]
+      },
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "title": "Denial of Service (DoS)",
+      "version": "3.19.4",
+      "name": "com.google.protobuf/protobuf-java",
+      "CVSSv3": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvssScore": 5.7
+    },
+    {
+      "creationTime": "2022-11-24T10:50:47Z",
+      "disclosureTime": "2022-11-24T10:14:41Z",
+      "exploit": "Proof of Concept",
+      "id": "SNYK-JAVA-COMH2DATABASE-3146851",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-45868"
+        ],
+        "CWE": [
+          "CWE-200"
+        ]
+      },
+      "modificationTime": "2024-03-11T09:52:49Z",
+      "packageName": "com.h2database/h2",
+      "packageUrl": "pkg:maven/com.h2database/h2@2.1.214?type=jar",
+      "publicationTime": "2022-11-24T10:56:05Z",
+      "semver": {
+        "vulnerable": [
+          "2.1.214"
+        ]
+      },
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "title": "Information Exposure",
+      "version": "2.1.214",
+      "name": "com.h2database/h2",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:L/A:N/E:P",
+      "cvssScore": 5.3
+    },
+    {
+      "creationTime": "2024-11-19T14:22:25Z",
+      "disclosureTime": "2024-11-18T04:43:33Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-ORGSPRINGFRAMEWORK-8384234",
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-38828"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "modificationTime": "2024-11-26T13:34:33Z",
+      "packageName": "org.springframework/spring-webmvc",
+      "packageUrl": "pkg:maven/org.springframework/spring-webmvc@5.3.39-spring-framework-5.3.46?type=jar",
+      "publicationTime": "2024-11-19T14:23:15Z",
+      "semver": {
+        "vulnerable": [
+          "5.3.39-spring-framework-5.3.46"
+        ]
+      },
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "title": "Denial of Service (DoS)",
+      "version": "5.3.39-spring-framework-5.3.46",
+      "name": "org.springframework/spring-webmvc",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "cvssScore": 6.9
+    },
+    {
+      "creationTime": "2025-04-25T12:27:16Z",
+      "disclosureTime": "2025-04-24T00:00:00Z",
+      "exploit": "Functional",
+      "id": "SNYK-JAVA-ORGSPRINGFRAMEWORKBOOT-9804539",
+      "identifiers": {
+        "CVE": [
+          "CVE-2025-22235"
+        ],
+        "CWE": [
+          "CWE-20"
+        ]
+      },
+      "modificationTime": "2025-04-29T13:33:35Z",
+      "packageName": "org.springframework.boot/spring-boot-actuator-autoconfigure",
+      "packageUrl": "pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure@2.7.18-spring-boot-2.7.27?type=jar",
+      "publicationTime": "2025-04-25T12:27:17Z",
+      "semver": {
+        "vulnerable": [
+          "2.7.18-spring-boot-2.7.27"
+        ]
+      },
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "title": "Improper Input Validation",
+      "version": "2.7.18-spring-boot-2.7.27",
+      "name": "org.springframework.boot/spring-boot-actuator-autoconfigure",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:F",
+      "cvssScore": 6.9
+    },
+    {
+      "creationTime": "2022-12-01T14:55:37Z",
+      "disclosureTime": "2022-12-01T14:49:09Z",
+      "exploit": "Proof of Concept",
+      "id": "SNYK-JAVA-ORGYAML-3152153",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-1471"
+        ],
+        "CWE": [
+          "CWE-20"
+        ]
+      },
+      "modificationTime": "2025-08-06T15:38:16Z",
+      "packageName": "org.yaml/snakeyaml",
+      "packageUrl": "pkg:maven/org.yaml/snakeyaml@1.33?type=jar",
+      "publicationTime": "2022-12-08T18:58:07Z",
+      "semver": {
+        "vulnerable": [
+          "1.33"
+        ]
+      },
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "title": "Arbitrary Code Execution",
+      "version": "1.33",
+      "name": "org.yaml/snakeyaml",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P",
+      "cvssScore": 6.6
+    },
+    {
+      "creationTime": "2025-06-26T07:01:02Z",
+      "disclosureTime": "2025-06-25T17:42:39Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-COMFASTERXMLJACKSONCORE-10500754",
+      "identifiers": {
+        "CVE": [
+          "CVE-2025-52999"
+        ],
+        "CWE": [
+          "CWE-121"
+        ]
+      },
+      "modificationTime": "2025-06-26T07:40:10Z",
+      "packageName": "com.fasterxml.jackson.core/jackson-core",
+      "packageUrl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.13.5?type=jar",
+      "publicationTime": "2025-06-26T07:40:10Z",
+      "semver": {
+        "vulnerable": [
+          "2.13.5"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Stack-based Buffer Overflow",
+      "version": "2.13.5",
+      "name": "com.fasterxml.jackson.core/jackson-core",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvssScore": 8.7
+    },
+    {
+      "creationTime": "2024-07-26T13:54:42Z",
+      "disclosureTime": "2022-12-08T22:24:00Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-COMFASTERXMLJACKSONCORE-7569538",
+      "identifiers": {
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "modificationTime": "2024-09-01T17:55:37Z",
+      "packageName": "com.fasterxml.jackson.core/jackson-core",
+      "packageUrl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.13.5?type=jar",
+      "publicationTime": "2024-07-26T13:54:42Z",
+      "semver": {
+        "vulnerable": [
+          "2.13.5"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Denial of Service (DoS)",
+      "version": "2.13.5",
+      "name": "com.fasterxml.jackson.core/jackson-core",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvssScore": 8.7
+    },
+    {
+      "creationTime": "2022-12-13T07:55:56Z",
+      "disclosureTime": "2022-12-12T15:30:33Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-COMGOOGLEPROTOBUF-3167772",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3509"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "modificationTime": "2024-03-11T09:54:00Z",
+      "packageName": "com.google.protobuf/protobuf-java",
+      "packageUrl": "pkg:maven/com.google.protobuf/protobuf-java@3.19.4?type=jar",
+      "publicationTime": "2022-12-13T09:25:58Z",
+      "semver": {
+        "vulnerable": [
+          "3.19.4"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Denial of Service (DoS)",
+      "version": "3.19.4",
+      "name": "com.google.protobuf/protobuf-java",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvssScore": 7.5
+    },
+    {
+      "creationTime": "2022-12-13T08:36:11Z",
+      "disclosureTime": "2022-12-13T08:08:49Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-COMGOOGLEPROTOBUF-3167774",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-3510"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "modificationTime": "2024-03-11T09:54:00Z",
+      "packageName": "com.google.protobuf/protobuf-java",
+      "packageUrl": "pkg:maven/com.google.protobuf/protobuf-java@3.19.4?type=jar",
+      "publicationTime": "2022-12-13T09:12:45Z",
+      "semver": {
+        "vulnerable": [
+          "3.19.4"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Denial of Service (DoS)",
+      "version": "3.19.4",
+      "name": "com.google.protobuf/protobuf-java",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvssScore": 7.5
+    },
+    {
+      "creationTime": "2024-09-19T06:54:48Z",
+      "disclosureTime": "2024-09-19T00:46:47Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-COMGOOGLEPROTOBUF-8055227",
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-7254"
+        ],
+        "CWE": [
+          "CWE-121"
+        ]
+      },
+      "modificationTime": "2025-07-31T01:13:20Z",
+      "packageName": "com.google.protobuf/protobuf-java",
+      "packageUrl": "pkg:maven/com.google.protobuf/protobuf-java@3.19.4?type=jar",
+      "publicationTime": "2024-09-19T07:20:17Z",
+      "semver": {
+        "vulnerable": [
+          "3.19.4"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Stack-based Buffer Overflow",
+      "version": "3.19.4",
+      "name": "com.google.protobuf/protobuf-java",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvssScore": 8.7
+    },
+    {
+      "creationTime": "2025-07-10T14:50:24Z",
+      "disclosureTime": "2025-06-16T22:00:00Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-10674391",
+      "identifiers": {
+        "CVE": [
+          "CVE-2025-52520"
+        ],
+        "CWE": [
+          "CWE-190"
+        ]
+      },
+      "modificationTime": "2025-08-26T11:02:42Z",
+      "packageName": "org.apache.tomcat.embed/tomcat-embed-core",
+      "packageUrl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@9.0.106?type=jar",
+      "publicationTime": "2025-07-10T14:54:23Z",
+      "semver": {
+        "vulnerable": [
+          "9.0.106"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Integer Overflow or Wraparound",
+      "version": "9.0.106",
+      "name": "org.apache.tomcat.embed/tomcat-embed-core",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvssScore": 8.7
+    },
+    {
+      "creationTime": "2025-07-10T15:02:43Z",
+      "disclosureTime": "2025-06-15T22:00:00Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-10676854",
+      "identifiers": {
+        "CVE": [
+          "CVE-2025-52434"
+        ],
+        "CWE": [
+          "CWE-362"
+        ]
+      },
+      "modificationTime": "2025-08-30T11:09:54Z",
+      "packageName": "org.apache.tomcat.embed/tomcat-embed-core",
+      "packageUrl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@9.0.106?type=jar",
+      "publicationTime": "2025-07-11T08:36:58Z",
+      "semver": {
+        "vulnerable": [
+          "9.0.106"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Race Condition",
+      "version": "9.0.106",
+      "name": "org.apache.tomcat.embed/tomcat-embed-core",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "cvssScore": 8.9
+    },
+    {
+      "creationTime": "2025-07-10T15:09:32Z",
+      "disclosureTime": "2025-06-30T22:00:00Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-10676855",
+      "identifiers": {
+        "CVE": [
+          "CVE-2025-53506"
+        ],
+        "CWE": [
+          "CWE-770"
+        ]
+      },
+      "modificationTime": "2025-08-26T11:03:18Z",
+      "packageName": "org.apache.tomcat.embed/tomcat-embed-core",
+      "packageUrl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@9.0.106?type=jar",
+      "publicationTime": "2025-07-11T09:00:14Z",
+      "semver": {
+        "vulnerable": [
+          "9.0.106"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "version": "9.0.106",
+      "name": "org.apache.tomcat.embed/tomcat-embed-core",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvssScore": 8.7
+    },
+    {
+      "creationTime": "2025-08-14T06:09:45Z",
+      "disclosureTime": "2025-08-13T15:30:34Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-ORGAPACHETOMCATEMBED-11799152",
+      "identifiers": {
+        "CVE": [
+          "CVE-2025-48989"
+        ],
+        "CWE": [
+          "CWE-404"
+        ]
+      },
+      "modificationTime": "2025-08-28T11:04:15Z",
+      "packageName": "org.apache.tomcat.embed/tomcat-embed-core",
+      "packageUrl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@9.0.106?type=jar",
+      "publicationTime": "2025-08-14T07:45:19Z",
+      "semver": {
+        "vulnerable": [
+          "9.0.106"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Improper Resource Shutdown or Release",
+      "version": "9.0.106",
+      "name": "org.apache.tomcat.embed/tomcat-embed-core",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "cvssScore": 8.7
+    },
+    {
+      "creationTime": "2025-08-19T08:14:28Z",
+      "disclosureTime": "2025-08-14T00:00:00Z",
+      "exploit": "Not Defined",
+      "id": "SNYK-JAVA-ORGSPRINGFRAMEWORK-12008931",
+      "identifiers": {
+        "CVE": [
+          "CVE-2025-41242"
+        ],
+        "CWE": [
+          "CWE-23"
+        ]
+      },
+      "modificationTime": "2025-08-19T17:29:27Z",
+      "packageName": "org.springframework/spring-beans",
+      "packageUrl": "pkg:maven/org.springframework/spring-beans@5.3.39-spring-framework-5.3.46?type=jar",
+      "publicationTime": "2025-08-19T08:14:29Z",
+      "semver": {
+        "vulnerable": [
+          "5.3.39-spring-framework-5.3.46"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Relative Path Traversal",
+      "version": "5.3.39-spring-framework-5.3.46",
+      "name": "org.springframework/spring-beans",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvssScore": 8.2
+    },
+    {
+      "creationTime": "2024-09-13T07:28:37Z",
+      "disclosureTime": "2024-09-13T06:43:53Z",
+      "exploit": "Proof of Concept",
+      "id": "SNYK-JAVA-ORGSPRINGFRAMEWORK-7945490",
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-38816"
+        ],
+        "CWE": [
+          "CWE-22"
+        ]
+      },
+      "modificationTime": "2025-09-02T05:20:06Z",
+      "packageName": "org.springframework/spring-webmvc",
+      "packageUrl": "pkg:maven/org.springframework/spring-webmvc@5.3.39-spring-framework-5.3.46?type=jar",
+      "publicationTime": "2024-09-13T07:28:37Z",
+      "semver": {
+        "vulnerable": [
+          "5.3.39-spring-framework-5.3.46"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Path Traversal",
+      "version": "5.3.39-spring-framework-5.3.46",
+      "name": "org.springframework/spring-webmvc",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N/E:P",
+      "cvssScore": 8.7
+    },
+    {
+      "creationTime": "2024-10-18T09:34:06Z",
+      "disclosureTime": "2024-10-17T00:00:00Z",
+      "exploit": "Proof of Concept",
+      "id": "SNYK-JAVA-ORGSPRINGFRAMEWORK-8230373",
+      "identifiers": {
+        "CVE": [
+          "CVE-2024-38819"
+        ],
+        "CWE": [
+          "CWE-23"
+        ]
+      },
+      "modificationTime": "2025-06-16T05:20:08Z",
+      "packageName": "org.springframework/spring-webmvc",
+      "packageUrl": "pkg:maven/org.springframework/spring-webmvc@5.3.39-spring-framework-5.3.46?type=jar",
+      "publicationTime": "2024-10-18T09:43:36Z",
+      "semver": {
+        "vulnerable": [
+          "5.3.39-spring-framework-5.3.46"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Path Traversal",
+      "version": "5.3.39-spring-framework-5.3.46",
+      "name": "org.springframework/spring-webmvc",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N/E:P",
+      "cvssScore": 8.7
+    },
+    {
+      "creationTime": "2023-08-01T09:19:27Z",
+      "disclosureTime": "2023-07-14T12:30:17Z",
+      "exploit": "Proof of Concept",
+      "id": "SNYK-JAVA-ORGTHYMELEAF-5811866",
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-38286"
+        ],
+        "CWE": [
+          "CWE-265"
+        ]
+      },
+      "modificationTime": "2024-03-11T09:53:27Z",
+      "packageName": "org.thymeleaf/thymeleaf",
+      "packageUrl": "pkg:maven/org.thymeleaf/thymeleaf@3.0.15.RELEASE?type=jar",
+      "publicationTime": "2023-07-14T12:42:34Z",
+      "semver": {
+        "vulnerable": [
+          "3.0.15.RELEASE"
+        ]
+      },
+      "severity": "critical",
+      "severityWithCritical": "critical",
+      "title": "Sandbox Bypass",
+      "version": "3.0.15.RELEASE",
+      "name": "org.thymeleaf/thymeleaf",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P",
+      "cvssScore": 9.8
+    }
+  ],
+  "license_issues": []
+}
