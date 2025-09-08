@@ -1,0 +1,108 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "https://openvex.dev/docs/public/vex-7c9f7e6851ee273324540dbc147d02f673d93da1cbe714b34520be8db1b4776d",
+  "author": "HeroDevs, Inc.",
+  "timestamp": "2025-08-26T08:33:26.250656-04:00",
+  "last_updated": "2025-08-26T09:39:53.395067-04:00",
+  "version": 14,
+  "statements": [
+    {
+      "vulnerability": {
+        "name": "CVE-2016-1000027"
+      },
+      "timestamp": "2025-08-26T09:01:11.646311-04:00",
+      "products": [
+        {
+          "@id": "pkg:maven/org.springframework/spring-web@5.3.39-spring-framework-5.3.46"
+        }
+      ],
+      "status": "not_affected",
+      "justification": "vulnerable_code_not_present",
+      "impact_statement": "This application does not use Spring Framework's remoting capabilities and is therefore not affected."
+    },
+    {
+      "vulnerability": {
+        "name": "CVE-2025-22235"
+      },
+      "timestamp": "2025-08-26T09:05:50.536204-04:00",
+      "products": [
+        {
+          "@id": "pkg:maven/org.springframework.boot/spring-boot@2.7.18-spring-boot-2.7.27"
+        }
+      ],
+      "status": "fixed"
+    },
+    {
+      "vulnerability": {
+        "name": "CVE-2024-38820"
+      },
+      "timestamp": "2025-08-26T09:34:25.144048-04:00",
+      "products": [
+        {
+          "@id": "pkg:maven/org.springframework/spring-context@5.3.39-spring-framework-5.3.42"
+        },
+        {
+          "@id": "pkg:maven/org.springframework/spring-context@5.3.39-spring-framework-5.3.43"
+        },
+        {
+          "@id": "pkg:maven/org.springframework/spring-context@5.3.39-spring-framework-5.3.44"
+        },
+        {
+          "@id": "pkg:maven/org.springframework/spring-context@5.3.39-spring-framework-5.3.45"
+        },
+        {
+          "@id": "pkg:maven/org.springframework/spring-context@5.3.39-spring-framework-5.3.46"
+        },
+        {
+          "@id": "pkg:maven/org.springframework/spring-web@5.3.39-spring-framework-5.3.42"
+        },
+        {
+          "@id": "pkg:maven/org.springframework/spring-web@5.3.39-spring-framework-5.3.43"
+        },
+        {
+          "@id": "pkg:maven/org.springframework/spring-web@5.3.39-spring-framework-5.3.44"
+        },
+        {
+          "@id": "pkg:maven/org.springframework/spring-web@5.3.39-spring-framework-5.3.45"
+        },
+        {
+          "@id": "pkg:maven/org.springframework/spring-web@5.3.39-spring-framework-5.3.46"
+        }
+      ],
+      "status": "fixed"
+    },
+    {
+      "vulnerability": {
+        "name": "CVE-2024-38828"
+      },
+      "timestamp": "2025-08-26T09:37:05.701084-04:00",
+      "products": [
+        {
+          "@id": "pkg:maven/org.springframework/spring-webmvc@5.3.39-spring-framework-5.3.44"
+        },
+        {
+          "@id": "pkg:maven/org.springframework/spring-webmvc@5.3.39-spring-framework-5.3.45"
+        },
+        {
+          "@id": "pkg:maven/org.springframework/spring-webmvc@5.3.39-spring-framework-5.3.46"
+        }
+      ],
+      "status": "fixed"
+    },
+    {
+      "vulnerability": {
+        "name": "CVE-2025-41242"
+      },
+      "timestamp": "2025-08-26T09:39:53.395068-04:00",
+      "products": [
+        {
+          "@id": "pkg:maven/org.springframework/spring-beans@5.3.39-spring-framework-5.3.47"
+        },
+        {
+          "@id": "pkg:maven/org.springframework/spring-webmvc@5.3.39-spring-framework-5.3.47"
+        }
+      ],
+      "status": "fixed"
+    }
+  ]
+}
