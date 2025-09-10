@@ -20,10 +20,18 @@ To obtain the source code for Spring PetClinic we found the [last commit](https:
 
 ### SBOM Generation
 
-The OSS and NES branches in the Spring PetClinic were then used to generate a CycloneDX SBOM in the JSON format. To generate an SBOM, reference the branches mentioned above and run the following command:
+The OSS and NES branches in the Spring PetClinic were then used to generate both a CycloneDX SBOM and a SPDX SBOM in the JSON format.
+
+To generate a CycloneDX SBOM, reference the branches mentioned above and run the following command:
 
 ```bash
 ./mvnw org.cyclonedx:cyclonedx-maven-plugin:makeAggregateBom
 ```
 
-This command will generate the SBOM files in the `target` directory. The files have been renamed to `oss-petclinic.sbom.json` and `nes-petclinic.sbom.json` respectively and are available in this repository.
+To generate a SPDX SBOM in the JSON format:
+
+```bash
+./mvnw org.spdx:spdx-maven-plugin:createSPDX
+```
+
+Those commands will generate the SBOM files in the `target` directory. The files have been renamed to `oss-petclinic.sbom.cdx.json`, `oss-petclinic.sbom.spdx.json`, `nes-petclinic.sbom.cdx.json`, and `nes-petclinic.sbom.spdx.json` respectively and are available in this repository.
