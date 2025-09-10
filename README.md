@@ -28,7 +28,7 @@ To generate a CycloneDX SBOM, reference the branches mentioned above and run the
 ./mvnw org.cyclonedx:cyclonedx-maven-plugin:makeAggregateBom
 ```
 
-To Generate a SPDX SBOM in the JSON format:
+To generate a SPDX SBOM in the JSON format:
 
 ```bash
 ./mvnw org.spdx:spdx-maven-plugin:createSPDX
