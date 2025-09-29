@@ -1,0 +1,235 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.5",
+  "serialNumber" : "urn:uuid:c6ae5fec-9aaa-4eb9-8d4a-54152edf3714",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2025-10-02T23:27:03Z",
+    "tools" : [
+      {
+        "vendor" : "OWASP",
+        "name" : "Dependency-Track",
+        "version" : "4.13.4"
+      }
+    ],
+    "component" : {
+      "type" : "library",
+      "bom-ref" : "d4ead0a7-8a6c-4b7c-a1b4-ee2e5ef812b0",
+      "name" : "NES-Petclinic",
+      "version" : "boot-2.7",
+      "purl" : "pkg:maven/org.springframework.samples/spring-petclinic@2.7.30?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://herodevs.com/support/spring-petclinic"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/spring-projects/spring-boot/spring-petclinic"
+        }
+      ]
+    }
+  },
+  "vulnerabilities" : [
+    {
+      "bom-ref" : "a56b2a94-2dec-40a3-8c68-6c0cff7f9f09",
+      "id" : "GHSA-4gc7-5j7h-4qph",
+      "source" : {
+        "name" : "GITHUB",
+        "url" : "https://github.com/advisories"
+      },
+      "ratings" : [
+        {
+          "source" : {
+            "name" : "GITHUB",
+            "url" : "https://github.com/advisories"
+          },
+          "severity" : "medium",
+          "method" : "other"
+        }
+      ],
+      "cwes" : [
+        178
+      ],
+      "description" : "The fix for CVE-2022-22968 made disallowedFields patterns in DataBinder case insensitive. However, String.toLowerCase() has some Locale dependent exceptions that could potentially result in fields not protected as expected.",
+      "published" : "2024-10-18T06:30:32Z",
+      "updated" : "2025-05-29T23:41:36Z",
+      "analysis" : {
+        "state" : "false_positive",
+        "detail" : "HeroDevs Remediated in 2.7.18-spring-boot-2.7.29"
+      },
+      "affects" : [
+        {
+          "ref" : "d4ead0a7-8a6c-4b7c-a1b4-ee2e5ef812b0"
+        }
+      ]
+    },
+    {
+      "bom-ref" : "c2974473-2e0f-4d49-b7bc-79fce09dbd69",
+      "id" : "GHSA-4wrc-f8pq-fpqp",
+      "source" : {
+        "name" : "GITHUB",
+        "url" : "https://github.com/advisories"
+      },
+      "ratings" : [
+        {
+          "source" : {
+            "name" : "GITHUB",
+            "url" : "https://github.com/advisories"
+          },
+          "severity" : "critical",
+          "method" : "other"
+        }
+      ],
+      "cwes" : [
+        502
+      ],
+      "description" : "Pivotal Spring Framework before 6.0.0 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. Maintainers recommend investigating alternative components or a potential mitigating control. Version 4.2.6 and 3.2.17 contain [enhanced documentation](https://github.com/spring-projects/spring-framework/commit/5cbe90b2cd91b866a5a9586e460f311860e11cfa) advising users to take precautions against unsafe Java deserialization, version 5.3.0 [deprecate the impacted classes](https://github.com/spring-projects/spring-framework/issues/25379) and version 6.0.0 [removed it entirely](https://github.com/spring-projects/spring-framework/issues/27422).",
+      "published" : "2022-05-24T17:05:30Z",
+      "updated" : "2025-01-19T23:00:38Z",
+      "analysis" : {
+        "state" : "false_positive",
+        "detail" : "HeroDevs Remediated in 2.7.18-spring-boot-2.7.29"
+      },
+      "affects" : [
+        {
+          "ref" : "d4ead0a7-8a6c-4b7c-a1b4-ee2e5ef812b0"
+        }
+      ]
+    },
+    {
+      "bom-ref" : "842924a3-3d7d-473b-8fab-2a3b23b1c476",
+      "id" : "GHSA-r936-gwx5-v52f",
+      "source" : {
+        "name" : "GITHUB",
+        "url" : "https://github.com/advisories"
+      },
+      "ratings" : [
+        {
+          "source" : {
+            "name" : "GITHUB",
+            "url" : "https://github.com/advisories"
+          },
+          "severity" : "medium",
+          "method" : "other"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "Spring Framework MVC applications can be vulnerable to a “Path Traversal Vulnerability” when deployed on a non-compliant Servlet container. An application can be vulnerable when all the following are true: * the application is deployed as a WAR or with an embedded Servlet container * the Servlet container does not reject suspicious sequences https://jakarta.ee/specifications/servlet/6.1/jakarta-servlet-spec-6.1.html#uri-path-canonicalization * the application serves static resources https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-config/static-resources.html#page-title  with Spring resource handling We have verified that applications deployed on Apache Tomcat or Eclipse Jetty are not vulnerable, as long as default security features are not disabled in the configuration. Because we cannot check exploits against all Servlet containers and configuration variants, we strongly recommend upgrading your application.",
+      "published" : "2025-08-18T09:31:44Z",
+      "updated" : "2025-08-18T23:12:15Z",
+      "analysis" : {
+        "state" : "false_positive",
+        "detail" : "HeroDevs Remediated in 2.7.18-spring-boot-2.7.29"
+      },
+      "affects" : [
+        {
+          "ref" : "d4ead0a7-8a6c-4b7c-a1b4-ee2e5ef812b0"
+        }
+      ]
+    },
+    {
+      "bom-ref" : "62a2c9d0-5a39-41d4-9464-aef93065849e",
+      "id" : "GHSA-w3c8-7r8f-9jp8",
+      "source" : {
+        "name" : "GITHUB",
+        "url" : "https://github.com/advisories"
+      },
+      "ratings" : [
+        {
+          "source" : {
+            "name" : "GITHUB",
+            "url" : "https://github.com/advisories"
+          },
+          "severity" : "medium",
+          "method" : "other"
+        }
+      ],
+      "cwes" : [
+        400
+      ],
+      "description" : "Spring MVC controller methods with an @RequestBody byte[] method parameter are vulnerable to a DoS attack.",
+      "published" : "2024-11-18T06:30:35Z",
+      "updated" : "2025-05-09T21:58:56Z",
+      "analysis" : {
+        "state" : "false_positive",
+        "detail" : "HeroDevs Remediated in 2.7.18-spring-boot-2.7.29"
+      },
+      "affects" : [
+        {
+          "ref" : "d4ead0a7-8a6c-4b7c-a1b4-ee2e5ef812b0"
+        }
+      ]
+    },
+    {
+      "bom-ref" : "9ada052b-e78b-4fe2-a1c4-904e44614ff6",
+      "id" : "GHSA-jmp9-x22r-554x",
+      "source" : {
+        "name" : "GITHUB",
+        "url" : "https://github.com/advisories"
+      },
+      "ratings" : [
+        {
+          "source" : {
+            "name" : "GITHUB",
+            "url" : "https://github.com/advisories"
+          },
+          "severity" : "high",
+          "method" : "other"
+        }
+      ],
+      "cwes" : [
+        285,
+        863
+      ],
+      "description" : "The Spring Framework annotation detection mechanism may not correctly resolve annotations on methods within type hierarchies with a parameterized super type with unbounded generics. This can be an issue if such annotations are used for authorization decisions. Your application may be affected by this if you are using Spring Security's @EnableMethodSecurity feature. You are not affected by this if you are not using @EnableMethodSecurity or if you do not use security annotations on methods in generic superclasses or generic interfaces. This CVE is published in conjunction with CVE-2025-41248 https://spring.io/security/cve-2025-41248 .",
+      "published" : "2025-09-16T15:32:34Z",
+      "updated" : "2025-09-16T22:00:55Z",
+      "analysis" : {
+        "state" : "false_positive",
+        "detail" : "HeroDevs Remediated in 2.7.18-spring-boot-2.7.29"
+      },
+      "affects" : [
+        {
+          "ref" : "d4ead0a7-8a6c-4b7c-a1b4-ee2e5ef812b0"
+        }
+      ]
+    },
+    {
+      "bom-ref" : "1c51d28e-b512-422a-b244-152cee29b550",
+      "id" : "GHSA-rc42-6c7j-7h5r",
+      "source" : {
+        "name" : "GITHUB",
+        "url" : "https://github.com/advisories"
+      },
+      "ratings" : [
+        {
+          "source" : {
+            "name" : "GITHUB",
+            "url" : "https://github.com/advisories"
+          },
+          "severity" : "high",
+          "method" : "other"
+        }
+      ],
+      "cwes" : [
+        20,
+        862
+      ],
+      "description" : "EndpointRequest.to() creates a matcher for null/** if the actuator endpoint, for which the EndpointRequest has been created, is disabled or not exposed. Your application may be affected by this if all the following conditions are met: * You use Spring Security * EndpointRequest.to() has been used in a Spring Security chain configuration * The endpoint which EndpointRequest references is disabled or not exposed via web * Your application handles requests to /null and this path needs protection You are not affected if any of the following is true: * You don't use Spring Security * You don't use EndpointRequest.to() * The endpoint which EndpointRequest.to() refers to is enabled and is exposed * Your application does not handle requests to /null or this path does not need protection",
+      "published" : "2025-04-28T09:31:53Z",
+      "updated" : "2025-05-17T01:05:47Z",
+      "analysis" : {
+        "state" : "false_positive",
+        "detail" : "HeroDevs Remediated in 2.7.18-spring-boot-2.7.30"
+      },
+      "affects" : [
+        {
+          "ref" : "d4ead0a7-8a6c-4b7c-a1b4-ee2e5ef812b0"
+        }
+      ]
+    }
+  ]
+}

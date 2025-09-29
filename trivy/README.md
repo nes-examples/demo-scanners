@@ -1,6 +1,6 @@
 # Trivy Scanner
 
-This section provides and overview on using the [Trivy scanner](https://github.com/aquasecurity/trivy) by Aqua Security to check for vulnerabilities in the Spring PetClinic application.
+This section provides an overview on using the [Trivy scanner](https://github.com/aquasecurity/trivy) by Aqua Security to check for vulnerabilities in the Spring PetClinic application.
 
 ## Setup
 
