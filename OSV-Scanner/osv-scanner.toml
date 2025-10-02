@@ -24,3 +24,15 @@ id = "GHSA-4wrc-f8pq-fpqp"
 # CVE-2016-1000027
 # https://www.herodevs.com/vulnerability-directory/cve-2016-1000027?nes-for-spring
 reason = "Not applicable"
+
+[[IgnoredVulns]]
+id = "GHSA-jmp9-x22r-554x"
+# CVE-2025-41249
+# https://www.herodevs.com/vulnerability-directory/cve-2025-41249?nes-for-spring
+reason = "HeroDevs Remediated in 5.3.39-spring-framework-5.3.48"
+
+[[IgnoredVulns]]
+id = "GHSA-r936-gwx5-v52f"
+# CVE-2025-41242
+# https://www.herodevs.com/vulnerability-directory/cve-2025-41242?nes-for-spring
+reason = "HeroDevs Remediated in 5.3.39-spring-framework-5.3.48"

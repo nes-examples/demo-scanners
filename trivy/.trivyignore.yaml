@@ -21,3 +21,14 @@ vulnerabilities:
     # GHSA-4wrc-f8pq-fpqp
     # https://www.herodevs.com/vulnerability-directory/cve-2016-1000027?nes-for-spring
     statement: "Not applicable"
+
+  - id: "CVE-2025-41249"
+    # GHSA-jmp9-x22r-554x
+    # https://www.herodevs.com/vulnerability-directory/cve-2025-41249?nes-for-spring
+    statement: "HeroDevs Remediated in 5.3.39-spring-framework-5.3.48"
+    # https://docs.herodevs.com/spring/release-notes/spring-framework#5-3-48
+
+  - id: "CVE-2025-41242"
+    # GHSA-r936-gwx5-v52f
+    # https://docs.herodevs.com/spring/release-notes/spring-framework#5-3-48
+    statement: "HeroDevs Remediated in 5.3.39-spring-framework-5.3.48"
