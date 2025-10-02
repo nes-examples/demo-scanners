@@ -94,3 +94,17 @@ ignore:
         # CVE-2024-38828
         # https://www.herodevs.com/vulnerability-directory/cve-2024-38828?nes-for-spring
         reason: 'HeroDevs Remediated in 5.3.39-spring-framework-5.3.44'
+
+  'SNYK-JAVA-ORGSPRINGFRAMEWORK-12817817':
+    - '*':
+        # CVE-2025-41249
+        # https://www.herodevs.com/vulnerability-directory/cve-2025-41249?nes-for-spring
+        reason: 'HeroDevs Remediated in 5.3.39-spring-framework-5.3.48'
+
+
+  'SNYK-JAVA-ORGSPRINGFRAMEWORK-11958848':
+    - '*':
+        # CVE-2025-41242
+        # https://www.herodevs.com/vulnerability-directory/cve-2025-41242?nes-for-spring
+        reason: 'HeroDevs Remediated in 5.3.39-spring-framework-5.3.48'
+

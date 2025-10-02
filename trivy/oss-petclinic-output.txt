@@ -4,7 +4,7 @@ Report Summary
 ┌────────┬──────┬─────────────────┐
 │ Target │ Type │ Vulnerabilities │
 ├────────┼──────┼─────────────────┤
-│ Java   │ jar  │       46        │
+│ Java   │ jar  │       47        │
 └────────┴──────┴─────────────────┘
 Legend:
 - '-': Not scanned
@@ -13,7 +13,7 @@ Legend:
 
 Java (jar)
 ==========
-Total: 46 (UNKNOWN: 0, LOW: 4, MEDIUM: 17, HIGH: 22, CRITICAL: 3)
+Total: 47 (UNKNOWN: 0, LOW: 4, MEDIUM: 17, HIGH: 23, CRITICAL: 3)
 
 ┌────────────────────────────────────────────────┬──────────────────┬──────────┬──────────┬───────────────────┬─────────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │                    Library                     │  Vulnerability   │ Severity │  Status  │ Installed Version │                  Fixed Version                  │                            Title                             │
@@ -118,6 +118,10 @@ Total: 46 (UNKNOWN: 0, LOW: 4, MEDIUM: 17, HIGH: 22, CRITICAL: 3)
 │                                                │ CVE-2025-22233   │ LOW      │          │                   │ 6.2.7, 6.1.20                                   │ CVE-2024-38820 ensured Locale-independent, lowercase         │
 │                                                │                  │          │          │                   │                                                 │ conversion for bo ...                                        │
 │                                                │                  │          │          │                   │                                                 │ https://avd.aquasec.com/nvd/cve-2025-22233                   │
+├────────────────────────────────────────────────┼──────────────────┼──────────┤          │                   ├─────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ org.springframework:spring-core                │ CVE-2025-41249   │ HIGH     │          │                   │ 6.2.11                                          │ org.springframework/spring-core: Spring Framework Annotation │
+│                                                │                  │          │          │                   │                                                 │ Detection Vulnerability                                      │
+│                                                │                  │          │          │                   │                                                 │ https://avd.aquasec.com/nvd/cve-2025-41249                   │
 ├────────────────────────────────────────────────┼──────────────────┼──────────┤          │                   ├─────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ org.springframework:spring-expression          │ CVE-2024-38808   │ MEDIUM   │          │                   │ 5.3.39                                          │ spring-expression: Denial of service when processing a       │
 │                                                │                  │          │          │                   │                                                 │ specially crafted Spring Expression Language...              │
