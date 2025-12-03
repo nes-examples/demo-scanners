@@ -5,4 +5,3 @@ Dependency-Check/dependency-check-output/
 Grype/grype-output/
 Scorecard/scorecard-output/
 Syft-Grype/syft-grype-output/
-sbom-scans
