@@ -1,7 +1,7 @@
 {
   "SchemaVersion": 2,
-  "ReportID": "019ae538-e870-7889-a32b-321061d0f2ce",
-  "CreatedAt": "2025-12-03T18:18:23.344562032+01:00",
+  "ReportID": "019ae53e-ddc4-7182-b522-b2375582370c",
+  "CreatedAt": "2025-12-03T18:24:53.828100171+01:00",
   "ArtifactName": "/home/marcin/repo/demo-scanners/nes-petclinic.sbom.spdx.json",
   "ArtifactType": "spdx",
   "Results": [

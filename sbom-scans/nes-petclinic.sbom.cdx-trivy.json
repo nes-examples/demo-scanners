@@ -1,7 +1,7 @@
 {
   "SchemaVersion": 2,
-  "ReportID": "019ae538-b962-7256-8227-c936b638ad2a",
-  "CreatedAt": "2025-12-03T18:18:11.298155038+01:00",
+  "ReportID": "019ae53e-3ff8-70ae-ae0a-d8e5cb12ea90",
+  "CreatedAt": "2025-12-03T18:24:13.432046947+01:00",
   "ArtifactName": "/home/marcin/repo/demo-scanners/nes-petclinic.sbom.cdx.json",
   "ArtifactType": "cyclonedx",
   "Results": [

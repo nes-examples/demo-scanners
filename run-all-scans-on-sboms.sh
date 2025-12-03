@@ -18,6 +18,7 @@ Tools used (if installed):
   - grype:  grype sbom <file> -> JSON
   - trivy:  trivy sbom <file> -> JSON
   - osv-scanner: osv-scanner scan source --lockfile <file> [--config ...] -> text
+JSON outputs are pretty-printed when jq is available on PATH.
 EOF
 }
 
@@ -64,6 +65,21 @@ log() {
   echo "[scan-sboms] $*"
 }
 
+format_json() {
+  local file="$1"
+  local tmp="${file}.tmp"
+  if ! command -v jq >/dev/null 2>&1; then
+    log "jq not installed; leaving $file compact"
+    return
+  fi
+  if jq . "$file" > "$tmp"; then
+    mv "$tmp" "$file"
+  else
+    log "jq failed to format $file; leaving compact"
+    rm -f "$tmp"
+  fi
+}
+
 run_grype() {
   local sbom="$1" label="$2"
   local outfile="$OUT_DIR/${label}-grype.json"
@@ -75,6 +91,7 @@ run_grype() {
   GRYPE_DB_AUTO_UPDATE=${GRYPE_DB_AUTO_UPDATE:-false} \
   GRYPE_CHECK_FOR_APP_UPDATE=${GRYPE_CHECK_FOR_APP_UPDATE:-false} \
     grype "sbom:${sbom}" --output json > "$outfile"
+  format_json "$outfile"
 }
 
 run_trivy() {
@@ -86,6 +103,7 @@ run_trivy() {
   fi
   log "trivy sbom -> $outfile"
   trivy sbom "$sbom" --format json --output "$outfile"
+  format_json "$outfile"
 }
 
 run_osv() {
