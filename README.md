@@ -15,7 +15,7 @@ demo-scanners/
 ## Helper Scripts
 
 - `run-all-scans-on-app.sh`: walks each scanner directory in this repo and runs its `run.sh`, letting every tool scan the local Spring PetClinic source tree in one go.
-- `run-all-scans-on-sboms.sh`: runs SBOM-capable tools (grype, trivy, osv-scanner) against the provided SBOMs (defaults to the checked-in OSS/NES CycloneDX + SPDX files) and drops results in `./sbom-scans`.
+- `run-all-scans-on-sboms.sh`: runs SBOM-capable tools (grype, trivy, osv-scanner) against the provided SBOMs (defaults to the checked-in OSS/NES CycloneDX + SPDX files) and drops results in `./sbom-scans`. Trivy can consume OpenVEX (`exclusions/openvex-not-affected.json`) and/or a trivy ignore file (`exclusions/trivy.ignore`). Grype uses a config file with ignore rules (defaults to `exclusions/grype-ignore.yaml`). OSV-Scanner uses `exclusions/osv-scanner.toml`. The bundled files document why the H2 console advisory `GHSA-22wj-vf5f-wrvj` is considered not applicable.
 
 ## Regenerating the SBOMs
 

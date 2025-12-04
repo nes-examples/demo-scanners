@@ -1,0 +1,2 @@
+# H2 console only enabled for dev/test; not exposed in packaged PetClinic
+GHSA-22wj-vf5f-wrvj
