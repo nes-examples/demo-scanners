@@ -1,0 +1,2455 @@
+{
+  "SchemaVersion": 2,
+  "ReportID": "019ae53e-ddc4-7182-b522-b2375582370c",
+  "CreatedAt": "2025-12-03T18:24:53.828100171+01:00",
+  "ArtifactName": "/home/marcin/repo/demo-scanners/nes-petclinic.sbom.spdx.json",
+  "ArtifactType": "spdx",
+  "Results": [
+    {
+      "Target": "Java",
+      "Class": "lang-pkgs",
+      "Type": "jar",
+      "Packages": [
+        {
+          "ID": "antlr:antlr:2.7.7",
+          "Name": "antlr:antlr",
+          "Identifier": {
+            "PURL": "pkg:maven/antlr/antlr@2.7.7",
+            "UID": "9b9235ad5f5a572b"
+          },
+          "Version": "2.7.7",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "ch.qos.logback:logback-classic:1.2.13",
+          "Name": "ch.qos.logback:logback-classic",
+          "Identifier": {
+            "PURL": "pkg:maven/ch.qos.logback/logback-classic@1.2.13",
+            "UID": "a8126e7df47ef03a"
+          },
+          "Version": "1.2.13",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "ch.qos.logback:logback-core:1.2.13"
+          ]
+        },
+        {
+          "ID": "ch.qos.logback:logback-core:1.2.13",
+          "Name": "ch.qos.logback:logback-core",
+          "Identifier": {
+            "PURL": "pkg:maven/ch.qos.logback/logback-core@1.2.13",
+            "UID": "6c9daf42b9338dc4"
+          },
+          "Version": "1.2.13",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "com.fasterxml.jackson.core:jackson-annotations:2.13.5",
+          "Name": "com.fasterxml.jackson.core:jackson-annotations",
+          "Identifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.13.5",
+            "UID": "4910320323a7cc5d"
+          },
+          "Version": "2.13.5",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "com.fasterxml.jackson.core:jackson-core:2.13.5",
+          "Name": "com.fasterxml.jackson.core:jackson-core",
+          "Identifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.13.5",
+            "UID": "cbce0079aead0d4f"
+          },
+          "Version": "2.13.5",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "com.fasterxml.jackson.core:jackson-databind:2.13.5",
+          "Name": "com.fasterxml.jackson.core:jackson-databind",
+          "Identifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.13.5",
+            "UID": "772bbd1ae34953d4"
+          },
+          "Version": "2.13.5",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "DependsOn": [
+            "com.fasterxml.jackson.core:jackson-annotations:2.13.5",
+            "com.fasterxml.jackson.core:jackson-core:2.13.5"
+          ]
+        },
+        {
+          "ID": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.13.5",
+          "Name": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8",
+          "Identifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.13.5",
+            "UID": "7ce1459660c7b92a"
+          },
+          "Version": "2.13.5",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.5",
+          "Name": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310",
+          "Identifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.13.5",
+            "UID": "f55da375e888586b"
+          },
+          "Version": "2.13.5",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "com.fasterxml.jackson.module:jackson-module-parameter-names:2.13.5",
+          "Name": "com.fasterxml.jackson.module:jackson-module-parameter-names",
+          "Identifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.13.5",
+            "UID": "feeb0dd1521583ca"
+          },
+          "Version": "2.13.5",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "com.fasterxml:classmate:1.5.1",
+          "Name": "com.fasterxml:classmate",
+          "Identifier": {
+            "PURL": "pkg:maven/com.fasterxml/classmate@1.5.1",
+            "UID": "546bb60074faeaf3"
+          },
+          "Version": "1.5.1",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "com.h2database:h2:2.1.214",
+          "Name": "com.h2database:h2",
+          "Identifier": {
+            "PURL": "pkg:maven/com.h2database/h2@2.1.214",
+            "UID": "7ee8a0ddbbd3e3cb"
+          },
+          "Version": "2.1.214",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "com.jayway.jsonpath:json-path:2.7.0",
+          "Name": "com.jayway.jsonpath:json-path",
+          "Identifier": {
+            "PURL": "pkg:maven/com.jayway.jsonpath/json-path@2.7.0",
+            "UID": "8282a7940150f0c1"
+          },
+          "Version": "2.7.0",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "DependsOn": [
+            "net.minidev:json-smart:2.4.11"
+          ]
+        },
+        {
+          "ID": "com.mysql:mysql-connector-j:8.0.33",
+          "Name": "com.mysql:mysql-connector-j",
+          "Identifier": {
+            "PURL": "pkg:maven/com.mysql/mysql-connector-j@8.0.33",
+            "UID": "a6042ab8be95490"
+          },
+          "Version": "8.0.33",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "com.sun.activation:jakarta.activation:1.2.2",
+          "Name": "com.sun.activation:jakarta.activation",
+          "Identifier": {
+            "PURL": "pkg:maven/com.sun.activation/jakarta.activation@1.2.2",
+            "UID": "133fef7666699ff1"
+          },
+          "Version": "1.2.2",
+          "Licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "com.sun.istack:istack-commons-runtime:3.0.12",
+          "Name": "com.sun.istack:istack-commons-runtime",
+          "Identifier": {
+            "PURL": "pkg:maven/com.sun.istack/istack-commons-runtime@3.0.12",
+            "UID": "305d03197d0405b2"
+          },
+          "Version": "3.0.12",
+          "Licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "com.vaadin.external.google:android-json:0.0.20131108.vaadin1",
+          "Name": "com.vaadin.external.google:android-json",
+          "Identifier": {
+            "PURL": "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1",
+            "UID": "b47e00dc9588722"
+          },
+          "Version": "0.0.20131108.vaadin1",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "com.zaxxer:HikariCP:4.0.3",
+          "Name": "com.zaxxer:HikariCP",
+          "Identifier": {
+            "PURL": "pkg:maven/com.zaxxer/HikariCP@4.0.3",
+            "UID": "862e626e0b060b97"
+          },
+          "Version": "4.0.3",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "io.micrometer:micrometer-core:1.9.17",
+          "Name": "io.micrometer:micrometer-core",
+          "Identifier": {
+            "PURL": "pkg:maven/io.micrometer/micrometer-core@1.9.17",
+            "UID": "b69038e905d49ab8"
+          },
+          "Version": "1.9.17",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "DependsOn": [
+            "org.latencyutils:LatencyUtils:2.0.3",
+            "org.hdrhistogram:HdrHistogram:2.1.12"
+          ]
+        },
+        {
+          "ID": "jakarta.activation:jakarta.activation-api:1.2.2",
+          "Name": "jakarta.activation:jakarta.activation-api",
+          "Identifier": {
+            "PURL": "pkg:maven/jakarta.activation/jakarta.activation-api@1.2.2",
+            "UID": "a6de94a660c55ef8"
+          },
+          "Version": "1.2.2",
+          "Licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "jakarta.annotation:jakarta.annotation-api:1.3.5",
+          "Name": "jakarta.annotation:jakarta.annotation-api",
+          "Identifier": {
+            "PURL": "pkg:maven/jakarta.annotation/jakarta.annotation-api@1.3.5",
+            "UID": "6710a5b96a4ebab7"
+          },
+          "Version": "1.3.5",
+          "Licenses": [
+            "(GPL-2.0-with-classpath-exception AND EPL-2.0)"
+          ]
+        },
+        {
+          "ID": "jakarta.persistence:jakarta.persistence-api:2.2.3",
+          "Name": "jakarta.persistence:jakarta.persistence-api",
+          "Identifier": {
+            "PURL": "pkg:maven/jakarta.persistence/jakarta.persistence-api@2.2.3",
+            "UID": "4ad42c9ee29f4e95"
+          },
+          "Version": "2.2.3",
+          "Licenses": [
+            "(BSD-3-Clause AND EPL-2.0)"
+          ]
+        },
+        {
+          "ID": "jakarta.transaction:jakarta.transaction-api:1.3.3",
+          "Name": "jakarta.transaction:jakarta.transaction-api",
+          "Identifier": {
+            "PURL": "pkg:maven/jakarta.transaction/jakarta.transaction-api@1.3.3",
+            "UID": "faaa3d466a79dd66"
+          },
+          "Version": "1.3.3",
+          "Licenses": [
+            "(GPL-2.0-with-classpath-exception AND EPL-2.0)"
+          ]
+        },
+        {
+          "ID": "jakarta.validation:jakarta.validation-api:2.0.2",
+          "Name": "jakarta.validation:jakarta.validation-api",
+          "Identifier": {
+            "PURL": "pkg:maven/jakarta.validation/jakarta.validation-api@2.0.2",
+            "UID": "2cb0de592c905e57"
+          },
+          "Version": "2.0.2",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "jakarta.xml.bind:jakarta.xml.bind-api:2.3.3",
+          "Name": "jakarta.xml.bind:jakarta.xml.bind-api",
+          "Identifier": {
+            "PURL": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@2.3.3",
+            "UID": "4fdaeda0c1b02834"
+          },
+          "Version": "2.3.3",
+          "Licenses": [
+            "BSD-3-Clause"
+          ],
+          "DependsOn": [
+            "jakarta.activation:jakarta.activation-api:1.2.2"
+          ]
+        },
+        {
+          "ID": "javax.cache:cache-api:1.1.1",
+          "Name": "javax.cache:cache-api",
+          "Identifier": {
+            "PURL": "pkg:maven/javax.cache/cache-api@1.1.1",
+            "UID": "82444e5534c1145f"
+          },
+          "Version": "1.1.1",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "net.bytebuddy:byte-buddy:1.12.23",
+          "Name": "net.bytebuddy:byte-buddy",
+          "Identifier": {
+            "PURL": "pkg:maven/net.bytebuddy/byte-buddy@1.12.23",
+            "UID": "568fee16e2eba94b"
+          },
+          "Version": "1.12.23",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "net.bytebuddy:byte-buddy-agent:1.12.23",
+          "Name": "net.bytebuddy:byte-buddy-agent",
+          "Identifier": {
+            "PURL": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.12.23",
+            "UID": "e7c59680615c760b"
+          },
+          "Version": "1.12.23",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "net.minidev:accessors-smart:2.4.11",
+          "Name": "net.minidev:accessors-smart",
+          "Identifier": {
+            "PURL": "pkg:maven/net.minidev/accessors-smart@2.4.11",
+            "UID": "63956f9585762b9d"
+          },
+          "Version": "2.4.11",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "DependsOn": [
+            "org.ow2.asm:asm:9.3"
+          ]
+        },
+        {
+          "ID": "net.minidev:json-smart:2.4.11",
+          "Name": "net.minidev:json-smart",
+          "Identifier": {
+            "PURL": "pkg:maven/net.minidev/json-smart@2.4.11",
+            "UID": "65978d926a77b2fc"
+          },
+          "Version": "2.4.11",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "DependsOn": [
+            "net.minidev:accessors-smart:2.4.11"
+          ]
+        },
+        {
+          "ID": "org.apache.logging.log4j:log4j-api:2.17.2",
+          "Name": "org.apache.logging.log4j:log4j-api",
+          "Identifier": {
+            "PURL": "pkg:maven/org.apache.logging.log4j/log4j-api@2.17.2",
+            "UID": "a0ef9a9537a2088e"
+          },
+          "Version": "2.17.2",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.apache.logging.log4j:log4j-to-slf4j:2.17.2",
+          "Name": "org.apache.logging.log4j:log4j-to-slf4j",
+          "Identifier": {
+            "PURL": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.17.2",
+            "UID": "500c6770f9c8ada1"
+          },
+          "Version": "2.17.2",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "DependsOn": [
+            "org.apache.logging.log4j:log4j-api:2.17.2"
+          ]
+        },
+        {
+          "ID": "org.apache.tomcat.embed:tomcat-embed-core:9.0.109",
+          "Name": "org.apache.tomcat.embed:tomcat-embed-core",
+          "Identifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@9.0.109",
+            "UID": "6e38067a2c2c4c65"
+          },
+          "Version": "9.0.109",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.apache.tomcat.embed:tomcat-embed-el:9.0.109",
+          "Name": "org.apache.tomcat.embed:tomcat-embed-el",
+          "Identifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@9.0.109",
+            "UID": "358991c4dbcb8886"
+          },
+          "Version": "9.0.109",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.apache.tomcat.embed:tomcat-embed-websocket:9.0.109",
+          "Name": "org.apache.tomcat.embed:tomcat-embed-websocket",
+          "Identifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@9.0.109",
+            "UID": "40f7ddff3bb32312"
+          },
+          "Version": "9.0.109",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.apiguardian:apiguardian-api:1.1.2",
+          "Name": "org.apiguardian:apiguardian-api",
+          "Identifier": {
+            "PURL": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2",
+            "UID": "f6f557a50d34ca1b"
+          },
+          "Version": "1.1.2",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.aspectj:aspectjweaver:1.9.7",
+          "Name": "org.aspectj:aspectjweaver",
+          "Identifier": {
+            "PURL": "pkg:maven/org.aspectj/aspectjweaver@1.9.7",
+            "UID": "c6383913f75ad2d8"
+          },
+          "Version": "1.9.7",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.assertj:assertj-core:3.22.0",
+          "Name": "org.assertj:assertj-core",
+          "Identifier": {
+            "PURL": "pkg:maven/org.assertj/assertj-core@3.22.0",
+            "UID": "a581aee44a7023e6"
+          },
+          "Version": "3.22.0",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.attoparser:attoparser:2.0.5.RELEASE",
+          "Name": "org.attoparser:attoparser",
+          "Identifier": {
+            "PURL": "pkg:maven/org.attoparser/attoparser@2.0.5.RELEASE",
+            "UID": "b57843375ddb33d7"
+          },
+          "Version": "2.0.5.RELEASE",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.checkerframework:checker-qual:3.5.0",
+          "Name": "org.checkerframework:checker-qual",
+          "Identifier": {
+            "PURL": "pkg:maven/org.checkerframework/checker-qual@3.5.0",
+            "UID": "36b5fb15439b4144"
+          },
+          "Version": "3.5.0",
+          "Licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "ID": "org.ehcache:ehcache:3.10.9",
+          "Name": "org.ehcache:ehcache",
+          "Identifier": {
+            "PURL": "pkg:maven/org.ehcache/ehcache@3.10.9",
+            "UID": "e88c89783cf35f4c"
+          },
+          "Version": "3.10.9",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "DependsOn": [
+            "org.glassfish.jaxb:jaxb-runtime:2.3.9",
+            "org.slf4j:slf4j-api:1.7.36"
+          ]
+        },
+        {
+          "ID": "org.glassfish.jaxb:jaxb-runtime:2.3.9",
+          "Name": "org.glassfish.jaxb:jaxb-runtime",
+          "Identifier": {
+            "PURL": "pkg:maven/org.glassfish.jaxb/jaxb-runtime@2.3.9",
+            "UID": "edac992c0daa43c5"
+          },
+          "Version": "2.3.9",
+          "Licenses": [
+            "BSD-3-Clause"
+          ],
+          "DependsOn": [
+            "com.sun.activation:jakarta.activation:1.2.2",
+            "org.glassfish.jaxb:txw2:2.3.9",
+            "com.sun.istack:istack-commons-runtime:3.0.12"
+          ]
+        },
+        {
+          "ID": "org.glassfish.jaxb:txw2:2.3.9",
+          "Name": "org.glassfish.jaxb:txw2",
+          "Identifier": {
+            "PURL": "pkg:maven/org.glassfish.jaxb/txw2@2.3.9",
+            "UID": "85ac31a8cb3b4b1a"
+          },
+          "Version": "2.3.9",
+          "Licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.hamcrest:hamcrest:2.2",
+          "Name": "org.hamcrest:hamcrest",
+          "Identifier": {
+            "PURL": "pkg:maven/org.hamcrest/hamcrest@2.2",
+            "UID": "1549c286d43b9d4"
+          },
+          "Version": "2.2",
+          "Licenses": [
+            "BSD-3-Clause"
+          ]
+        },
+        {
+          "ID": "org.hdrhistogram:HdrHistogram:2.1.12",
+          "Name": "org.hdrhistogram:HdrHistogram",
+          "Identifier": {
+            "PURL": "pkg:maven/org.hdrhistogram/HdrHistogram@2.1.12",
+            "UID": "638e196512a6fc10"
+          },
+          "Version": "2.1.12",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.hibernate.common:hibernate-commons-annotations:5.1.2.Final",
+          "Name": "org.hibernate.common:hibernate-commons-annotations",
+          "Identifier": {
+            "PURL": "pkg:maven/org.hibernate.common/hibernate-commons-annotations@5.1.2.Final",
+            "UID": "9671d45163653896"
+          },
+          "Version": "5.1.2.Final",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.hibernate.validator:hibernate-validator:6.2.5.Final",
+          "Name": "org.hibernate.validator:hibernate-validator",
+          "Identifier": {
+            "PURL": "pkg:maven/org.hibernate.validator/hibernate-validator@6.2.5.Final",
+            "UID": "984f4a0e285579d5"
+          },
+          "Version": "6.2.5.Final",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "DependsOn": [
+            "jakarta.validation:jakarta.validation-api:2.0.2"
+          ]
+        },
+        {
+          "ID": "org.hibernate:hibernate-core:5.6.15.Final",
+          "Name": "org.hibernate:hibernate-core",
+          "Identifier": {
+            "PURL": "pkg:maven/org.hibernate/hibernate-core@5.6.15.Final",
+            "UID": "d982c56935fde9c4"
+          },
+          "Version": "5.6.15.Final",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "net.bytebuddy:byte-buddy:1.12.23",
+            "org.jboss:jandex:2.4.2.Final",
+            "antlr:antlr:2.7.7",
+            "com.fasterxml:classmate:1.5.1",
+            "org.jboss.logging:jboss-logging:3.4.3.Final",
+            "org.hibernate.common:hibernate-commons-annotations:5.1.2.Final"
+          ]
+        },
+        {
+          "ID": "org.jboss.logging:jboss-logging:3.4.3.Final",
+          "Name": "org.jboss.logging:jboss-logging",
+          "Identifier": {
+            "PURL": "pkg:maven/org.jboss.logging/jboss-logging@3.4.3.Final",
+            "UID": "a685ebd1cd165bc8"
+          },
+          "Version": "3.4.3.Final",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.jboss:jandex:2.4.2.Final",
+          "Name": "org.jboss:jandex",
+          "Identifier": {
+            "PURL": "pkg:maven/org.jboss/jandex@2.4.2.Final",
+            "UID": "a242670e2144853c"
+          },
+          "Version": "2.4.2.Final",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.junit.jupiter:junit-jupiter:5.8.2",
+          "Name": "org.junit.jupiter:junit-jupiter",
+          "Identifier": {
+            "PURL": "pkg:maven/org.junit.jupiter/junit-jupiter@5.8.2",
+            "UID": "a2600a9af702dd7a"
+          },
+          "Version": "5.8.2",
+          "Licenses": [
+            "EPL-2.0"
+          ],
+          "DependsOn": [
+            "org.junit.jupiter:junit-jupiter-engine:5.8.2",
+            "org.junit.jupiter:junit-jupiter-api:5.8.2",
+            "org.junit.jupiter:junit-jupiter-params:5.8.2"
+          ]
+        },
+        {
+          "ID": "org.junit.jupiter:junit-jupiter-api:5.8.2",
+          "Name": "org.junit.jupiter:junit-jupiter-api",
+          "Identifier": {
+            "PURL": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.8.2",
+            "UID": "12af2256c2f0701c"
+          },
+          "Version": "5.8.2",
+          "Licenses": [
+            "EPL-2.0"
+          ],
+          "DependsOn": [
+            "org.apiguardian:apiguardian-api:1.1.2",
+            "org.junit.platform:junit-platform-commons:1.8.2",
+            "org.opentest4j:opentest4j:1.2.0"
+          ]
+        },
+        {
+          "ID": "org.junit.jupiter:junit-jupiter-engine:5.8.2",
+          "Name": "org.junit.jupiter:junit-jupiter-engine",
+          "Identifier": {
+            "PURL": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.8.2",
+            "UID": "fde9e566df776717"
+          },
+          "Version": "5.8.2",
+          "Licenses": [
+            "EPL-2.0"
+          ],
+          "DependsOn": [
+            "org.junit.platform:junit-platform-engine:1.8.2"
+          ]
+        },
+        {
+          "ID": "org.junit.jupiter:junit-jupiter-params:5.8.2",
+          "Name": "org.junit.jupiter:junit-jupiter-params",
+          "Identifier": {
+            "PURL": "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.8.2",
+            "UID": "fa80b4f49433590c"
+          },
+          "Version": "5.8.2",
+          "Licenses": [
+            "EPL-2.0"
+          ]
+        },
+        {
+          "ID": "org.junit.platform:junit-platform-commons:1.8.2",
+          "Name": "org.junit.platform:junit-platform-commons",
+          "Identifier": {
+            "PURL": "pkg:maven/org.junit.platform/junit-platform-commons@1.8.2",
+            "UID": "ed3dafb1c7e152c8"
+          },
+          "Version": "1.8.2",
+          "Licenses": [
+            "EPL-2.0"
+          ]
+        },
+        {
+          "ID": "org.junit.platform:junit-platform-engine:1.8.2",
+          "Name": "org.junit.platform:junit-platform-engine",
+          "Identifier": {
+            "PURL": "pkg:maven/org.junit.platform/junit-platform-engine@1.8.2",
+            "UID": "162a4ca5a2257828"
+          },
+          "Version": "1.8.2",
+          "Licenses": [
+            "EPL-2.0"
+          ]
+        },
+        {
+          "ID": "org.latencyutils:LatencyUtils:2.0.3",
+          "Name": "org.latencyutils:LatencyUtils",
+          "Identifier": {
+            "PURL": "pkg:maven/org.latencyutils/LatencyUtils@2.0.3",
+            "UID": "9faf195417f253ac"
+          },
+          "Version": "2.0.3",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.mockito:mockito-core:4.5.1",
+          "Name": "org.mockito:mockito-core",
+          "Identifier": {
+            "PURL": "pkg:maven/org.mockito/mockito-core@4.5.1",
+            "UID": "d0591f7be9b04aba"
+          },
+          "Version": "4.5.1",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "net.bytebuddy:byte-buddy-agent:1.12.23",
+            "org.objenesis:objenesis:3.2"
+          ]
+        },
+        {
+          "ID": "org.mockito:mockito-junit-jupiter:4.5.1",
+          "Name": "org.mockito:mockito-junit-jupiter",
+          "Identifier": {
+            "PURL": "pkg:maven/org.mockito/mockito-junit-jupiter@4.5.1",
+            "UID": "87b90139225fc512"
+          },
+          "Version": "4.5.1",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.objenesis:objenesis:3.2",
+          "Name": "org.objenesis:objenesis",
+          "Identifier": {
+            "PURL": "pkg:maven/org.objenesis/objenesis@3.2",
+            "UID": "fd795ba15c84409f"
+          },
+          "Version": "3.2",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.opentest4j:opentest4j:1.2.0",
+          "Name": "org.opentest4j:opentest4j",
+          "Identifier": {
+            "PURL": "pkg:maven/org.opentest4j/opentest4j@1.2.0",
+            "UID": "23deba29e198e59c"
+          },
+          "Version": "1.2.0",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.ow2.asm:asm:9.3",
+          "Name": "org.ow2.asm:asm",
+          "Identifier": {
+            "PURL": "pkg:maven/org.ow2.asm/asm@9.3",
+            "UID": "991179cc8a47e458"
+          },
+          "Version": "9.3",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.postgresql:postgresql:42.3.10",
+          "Name": "org.postgresql:postgresql",
+          "Identifier": {
+            "PURL": "pkg:maven/org.postgresql/postgresql@42.3.10",
+            "UID": "e4e63583250a12ef"
+          },
+          "Version": "42.3.10",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "org.checkerframework:checker-qual:3.5.0"
+          ]
+        },
+        {
+          "ID": "org.skyscreamer:jsonassert:1.5.3",
+          "Name": "org.skyscreamer:jsonassert",
+          "Identifier": {
+            "PURL": "pkg:maven/org.skyscreamer/jsonassert@1.5.3",
+            "UID": "64ddf239a6089b30"
+          },
+          "Version": "1.5.3",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "DependsOn": [
+            "com.vaadin.external.google:android-json:0.0.20131108.vaadin1"
+          ]
+        },
+        {
+          "ID": "org.slf4j:jul-to-slf4j:1.7.36",
+          "Name": "org.slf4j:jul-to-slf4j",
+          "Identifier": {
+            "PURL": "pkg:maven/org.slf4j/jul-to-slf4j@1.7.36",
+            "UID": "bc562e59b9b5a66c"
+          },
+          "Version": "1.7.36",
+          "Licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "ID": "org.slf4j:slf4j-api:1.7.36",
+          "Name": "org.slf4j:slf4j-api",
+          "Identifier": {
+            "PURL": "pkg:maven/org.slf4j/slf4j-api@1.7.36",
+            "UID": "adf217dcdfcb0b0f"
+          },
+          "Version": "1.7.36",
+          "Licenses": [
+            "MIT"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot@2.7.18-spring-boot-2.7.30",
+            "UID": "4fcedc7642f92eda"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-actuator:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-actuator",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-actuator@2.7.18-spring-boot-2.7.30",
+            "UID": "3b3cf4a3c3cd1675"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-actuator-autoconfigure:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-actuator-autoconfigure",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure@2.7.18-spring-boot-2.7.30",
+            "UID": "80cc47ea1614965f"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.5",
+            "com.fasterxml.jackson.core:jackson-databind:2.13.5",
+            "org.springframework.boot:spring-boot-actuator:2.7.18-spring-boot-2.7.30"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-autoconfigure:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-autoconfigure",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@2.7.18-spring-boot-2.7.30",
+            "UID": "730bbe5e1e5a832a"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-devtools:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-devtools",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-devtools@2.7.18-spring-boot-2.7.30",
+            "UID": "6311c752fafe34ad"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "org.springframework.boot:spring-boot-autoconfigure:2.7.18-spring-boot-2.7.30",
+            "org.springframework.boot:spring-boot:2.7.18-spring-boot-2.7.30"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-starter",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter@2.7.18-spring-boot-2.7.30",
+            "UID": "db718e592d6c9e9d"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "org.springframework.boot:spring-boot-starter-logging:2.7.18-spring-boot-2.7.30",
+            "jakarta.annotation:jakarta.annotation-api:1.3.5",
+            "org.yaml:snakeyaml:1.33"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-actuator:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-starter-actuator",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-actuator@2.7.18-spring-boot-2.7.30",
+            "UID": "555f215116cf530"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "org.springframework.boot:spring-boot-actuator-autoconfigure:2.7.18-spring-boot-2.7.30",
+            "io.micrometer:micrometer-core:1.9.17",
+            "org.springframework.boot:spring-boot-starter:2.7.18-spring-boot-2.7.30"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-aop:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-starter-aop",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-aop@2.7.18-spring-boot-2.7.30",
+            "UID": "801ddc05d91a9bc4"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "org.springframework:spring-aop:5.3.39-spring-framework-5.3.48",
+            "org.aspectj:aspectjweaver:1.9.7"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-cache:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-starter-cache",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-cache@2.7.18-spring-boot-2.7.30",
+            "UID": "7fe34f3f7adde1ba"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "org.springframework:spring-context-support:5.3.39-spring-framework-5.3.48"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-data-jpa:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-starter-data-jpa",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa@2.7.18-spring-boot-2.7.30",
+            "UID": "5dd117347b158113"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "org.springframework:spring-aspects:5.3.39-spring-framework-5.3.48",
+            "jakarta.persistence:jakarta.persistence-api:2.2.3",
+            "org.springframework.boot:spring-boot-starter-jdbc:2.7.18-spring-boot-2.7.30",
+            "org.hibernate:hibernate-core:5.6.15.Final",
+            "org.springframework.data:spring-data-jpa:2.7.18-spring-data-jpa-2.7.23",
+            "jakarta.transaction:jakarta.transaction-api:1.3.3",
+            "org.springframework.boot:spring-boot-starter-aop:2.7.18-spring-boot-2.7.30"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-jdbc:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-starter-jdbc",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-jdbc@2.7.18-spring-boot-2.7.30",
+            "UID": "c518bfb1144b9757"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "com.zaxxer:HikariCP:4.0.3",
+            "org.springframework:spring-jdbc:5.3.39-spring-framework-5.3.48"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-json:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-starter-json",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-json@2.7.18-spring-boot-2.7.30",
+            "UID": "bb506addc9b46da5"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.13.5",
+            "com.fasterxml.jackson.module:jackson-module-parameter-names:2.13.5"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-logging:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-starter-logging",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@2.7.18-spring-boot-2.7.30",
+            "UID": "f376bacc1eee352a"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "org.apache.logging.log4j:log4j-to-slf4j:2.17.2",
+            "org.slf4j:jul-to-slf4j:1.7.36",
+            "ch.qos.logback:logback-classic:1.2.13"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-test:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-starter-test",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-test@2.7.18-spring-boot-2.7.30",
+            "UID": "3c35d98ad912095a"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "org.springframework:spring-core:5.3.39-spring-framework-5.3.48",
+            "jakarta.xml.bind:jakarta.xml.bind-api:2.3.3",
+            "org.hamcrest:hamcrest:2.2",
+            "org.mockito:mockito-junit-jupiter:4.5.1",
+            "org.assertj:assertj-core:3.22.0",
+            "org.junit.jupiter:junit-jupiter:5.8.2",
+            "org.springframework.boot:spring-boot-test:2.7.18-spring-boot-2.7.30",
+            "org.skyscreamer:jsonassert:1.5.3",
+            "com.jayway.jsonpath:json-path:2.7.0",
+            "org.xmlunit:xmlunit-core:2.9.1",
+            "org.mockito:mockito-core:4.5.1",
+            "org.springframework:spring-test:5.3.39-spring-framework-5.3.48",
+            "org.springframework.boot:spring-boot-test-autoconfigure:2.7.18-spring-boot-2.7.30"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-thymeleaf:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-starter-thymeleaf",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-thymeleaf@2.7.18-spring-boot-2.7.30",
+            "UID": "c86482b7ed086350"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "org.thymeleaf.extras:thymeleaf-extras-java8time:3.0.4.RELEASE",
+            "org.thymeleaf:thymeleaf-spring5:3.0.15.RELEASE"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-tomcat:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-starter-tomcat",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@2.7.18-spring-boot-2.7.30",
+            "UID": "90c5dfa3fcd56180"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "org.apache.tomcat.embed:tomcat-embed-websocket:9.0.109",
+            "org.apache.tomcat.embed:tomcat-embed-core:9.0.109"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-validation:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-starter-validation",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-validation@2.7.18-spring-boot-2.7.30",
+            "UID": "378c2e4af2727a5"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "org.hibernate.validator:hibernate-validator:6.2.5.Final",
+            "org.apache.tomcat.embed:tomcat-embed-el:9.0.109"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-starter-web:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-starter-web",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-starter-web@2.7.18-spring-boot-2.7.30",
+            "UID": "902b33bc4c9c83b9"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "org.springframework:spring-web:5.3.39-spring-framework-5.3.48",
+            "org.springframework.boot:spring-boot-starter-tomcat:2.7.18-spring-boot-2.7.30",
+            "org.springframework:spring-webmvc:5.3.39-spring-framework-5.3.48",
+            "org.springframework.boot:spring-boot-starter-json:2.7.18-spring-boot-2.7.30"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-test:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-test",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-test@2.7.18-spring-boot-2.7.30",
+            "UID": "dd5a34b8be6d40f2"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.springframework.boot:spring-boot-test-autoconfigure:2.7.18-spring-boot-2.7.30",
+          "Name": "org.springframework.boot:spring-boot-test-autoconfigure",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@2.7.18-spring-boot-2.7.30",
+            "UID": "9a5f5640a7ef56e9"
+          },
+          "Version": "2.7.18-spring-boot-2.7.30",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.springframework.data:spring-data-commons:2.7.18-spring-data-commons-2.7.23",
+          "Name": "org.springframework.data:spring-data-commons",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.data/spring-data-commons@2.7.18-spring-data-commons-2.7.23",
+            "UID": "e9d2e33c2f5997ca"
+          },
+          "Version": "2.7.18-spring-data-commons-2.7.23",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.springframework.data:spring-data-jpa:2.7.18-spring-data-jpa-2.7.23",
+          "Name": "org.springframework.data:spring-data-jpa",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.data/spring-data-jpa@2.7.18-spring-data-jpa-2.7.23",
+            "UID": "c33c493fb4195cab"
+          },
+          "Version": "2.7.18-spring-data-jpa-2.7.23",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "DependsOn": [
+            "org.springframework:spring-tx:5.3.39-spring-framework-5.3.48",
+            "org.springframework.data:spring-data-commons:2.7.18-spring-data-commons-2.7.23",
+            "org.springframework:spring-orm:5.3.39-spring-framework-5.3.48"
+          ]
+        },
+        {
+          "ID": "org.springframework.samples:spring-petclinic:2.7.30",
+          "Name": "org.springframework.samples:spring-petclinic",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework.samples/spring-petclinic@2.7.30",
+            "UID": "f79f1af496679b0e"
+          },
+          "Version": "2.7.30",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "DependsOn": [
+            "javax.cache:cache-api:1.1.1",
+            "org.postgresql:postgresql:42.3.10",
+            "org.springframework.boot:spring-boot-starter-actuator:2.7.18-spring-boot-2.7.30",
+            "org.ehcache:ehcache:3.10.9",
+            "org.springframework.boot:spring-boot-starter-cache:2.7.18-spring-boot-2.7.30",
+            "com.h2database:h2:2.1.214",
+            "org.webjars.npm:font-awesome:4.7.0",
+            "org.springframework.boot:spring-boot-starter-data-jpa:2.7.18-spring-boot-2.7.30",
+            "org.springframework.boot:spring-boot-starter-thymeleaf:2.7.18-spring-boot-2.7.30",
+            "com.mysql:mysql-connector-j:8.0.33",
+            "org.springframework.boot:spring-boot-starter-web:2.7.18-spring-boot-2.7.30",
+            "org.webjars.npm:bootstrap:5.1.3",
+            "org.springframework.boot:spring-boot-starter-validation:2.7.18-spring-boot-2.7.30",
+            "org.springframework.boot:spring-boot-starter-test:2.7.18-spring-boot-2.7.30",
+            "org.springframework.boot:spring-boot-devtools:2.7.18-spring-boot-2.7.30"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-aop:5.3.39-spring-framework-5.3.48",
+          "Name": "org.springframework:spring-aop",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-aop@5.3.39-spring-framework-5.3.48",
+            "UID": "97314cde639b822b"
+          },
+          "Version": "5.3.39-spring-framework-5.3.48",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-aspects:5.3.39-spring-framework-5.3.48",
+          "Name": "org.springframework:spring-aspects",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-aspects@5.3.39-spring-framework-5.3.48",
+            "UID": "6e3849a42ab0d78e"
+          },
+          "Version": "5.3.39-spring-framework-5.3.48",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-beans:5.3.39-spring-framework-5.3.48",
+          "Name": "org.springframework:spring-beans",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-beans@5.3.39-spring-framework-5.3.48",
+            "UID": "6565e04ec5b94365"
+          },
+          "Version": "5.3.39-spring-framework-5.3.48",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-context:5.3.39-spring-framework-5.3.48",
+          "Name": "org.springframework:spring-context",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-context@5.3.39-spring-framework-5.3.48",
+            "UID": "bee5045ad23868d9"
+          },
+          "Version": "5.3.39-spring-framework-5.3.48",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-context-support:5.3.39-spring-framework-5.3.48",
+          "Name": "org.springframework:spring-context-support",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-context-support@5.3.39-spring-framework-5.3.48",
+            "UID": "a80446f7ae9ef0e9"
+          },
+          "Version": "5.3.39-spring-framework-5.3.48",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "org.springframework:spring-beans:5.3.39-spring-framework-5.3.48",
+            "org.springframework:spring-context:5.3.39-spring-framework-5.3.48"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-core:5.3.39-spring-framework-5.3.48",
+          "Name": "org.springframework:spring-core",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-core@5.3.39-spring-framework-5.3.48",
+            "UID": "dacc47ffd2262799"
+          },
+          "Version": "5.3.39-spring-framework-5.3.48",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "org.springframework:spring-jcl:5.3.39-spring-framework-5.3.48"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-expression:5.3.39-spring-framework-5.3.48",
+          "Name": "org.springframework:spring-expression",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-expression@5.3.39-spring-framework-5.3.48",
+            "UID": "a8f5439336981095"
+          },
+          "Version": "5.3.39-spring-framework-5.3.48",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-jcl:5.3.39-spring-framework-5.3.48",
+          "Name": "org.springframework:spring-jcl",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-jcl@5.3.39-spring-framework-5.3.48",
+            "UID": "658b0b4341b77f19"
+          },
+          "Version": "5.3.39-spring-framework-5.3.48",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-jdbc:5.3.39-spring-framework-5.3.48",
+          "Name": "org.springframework:spring-jdbc",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-jdbc@5.3.39-spring-framework-5.3.48",
+            "UID": "a6b7934da9b538a7"
+          },
+          "Version": "5.3.39-spring-framework-5.3.48",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-orm:5.3.39-spring-framework-5.3.48",
+          "Name": "org.springframework:spring-orm",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-orm@5.3.39-spring-framework-5.3.48",
+            "UID": "e5b6b20169d75b4b"
+          },
+          "Version": "5.3.39-spring-framework-5.3.48",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-test:5.3.39-spring-framework-5.3.48",
+          "Name": "org.springframework:spring-test",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-test@5.3.39-spring-framework-5.3.48",
+            "UID": "e0992b8966cb37f5"
+          },
+          "Version": "5.3.39-spring-framework-5.3.48",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-tx:5.3.39-spring-framework-5.3.48",
+          "Name": "org.springframework:spring-tx",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-tx@5.3.39-spring-framework-5.3.48",
+            "UID": "f860e1406048e5dc"
+          },
+          "Version": "5.3.39-spring-framework-5.3.48",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-web:5.3.39-spring-framework-5.3.48",
+          "Name": "org.springframework:spring-web",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-web@5.3.39-spring-framework-5.3.48",
+            "UID": "8f50673e3ac52dc"
+          },
+          "Version": "5.3.39-spring-framework-5.3.48",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.springframework:spring-webmvc:5.3.39-spring-framework-5.3.48",
+          "Name": "org.springframework:spring-webmvc",
+          "Identifier": {
+            "PURL": "pkg:maven/org.springframework/spring-webmvc@5.3.39-spring-framework-5.3.48",
+            "UID": "3defb10434a81b9f"
+          },
+          "Version": "5.3.39-spring-framework-5.3.48",
+          "Licenses": [
+            "NOASSERTION"
+          ],
+          "DependsOn": [
+            "org.springframework:spring-expression:5.3.39-spring-framework-5.3.48"
+          ]
+        },
+        {
+          "ID": "org.thymeleaf.extras:thymeleaf-extras-java8time:3.0.4.RELEASE",
+          "Name": "org.thymeleaf.extras:thymeleaf-extras-java8time",
+          "Identifier": {
+            "PURL": "pkg:maven/org.thymeleaf.extras/thymeleaf-extras-java8time@3.0.4.RELEASE",
+            "UID": "8f7f1ae75edd5a0"
+          },
+          "Version": "3.0.4.RELEASE",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.thymeleaf:thymeleaf:3.0.15.RELEASE",
+          "Name": "org.thymeleaf:thymeleaf",
+          "Identifier": {
+            "PURL": "pkg:maven/org.thymeleaf/thymeleaf@3.0.15.RELEASE",
+            "UID": "6a45b6f9c265fa7c"
+          },
+          "Version": "3.0.15.RELEASE",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "DependsOn": [
+            "org.attoparser:attoparser:2.0.5.RELEASE",
+            "org.unbescape:unbescape:1.1.6.RELEASE"
+          ]
+        },
+        {
+          "ID": "org.thymeleaf:thymeleaf-spring5:3.0.15.RELEASE",
+          "Name": "org.thymeleaf:thymeleaf-spring5",
+          "Identifier": {
+            "PURL": "pkg:maven/org.thymeleaf/thymeleaf-spring5@3.0.15.RELEASE",
+            "UID": "304f5465940c7c3c"
+          },
+          "Version": "3.0.15.RELEASE",
+          "Licenses": [
+            "Apache-2.0"
+          ],
+          "DependsOn": [
+            "org.thymeleaf:thymeleaf:3.0.15.RELEASE"
+          ]
+        },
+        {
+          "ID": "org.unbescape:unbescape:1.1.6.RELEASE",
+          "Name": "org.unbescape:unbescape",
+          "Identifier": {
+            "PURL": "pkg:maven/org.unbescape/unbescape@1.1.6.RELEASE",
+            "UID": "d971636b14bd5a65"
+          },
+          "Version": "1.1.6.RELEASE",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.webjars.npm:bootstrap:5.1.3",
+          "Name": "org.webjars.npm:bootstrap",
+          "Identifier": {
+            "PURL": "pkg:maven/org.webjars.npm/bootstrap@5.1.3",
+            "UID": "4622f116d082af98"
+          },
+          "Version": "5.1.3",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.webjars.npm:font-awesome:4.7.0",
+          "Name": "org.webjars.npm:font-awesome",
+          "Identifier": {
+            "PURL": "pkg:maven/org.webjars.npm/font-awesome@4.7.0",
+            "UID": "50c373f536c5b543"
+          },
+          "Version": "4.7.0",
+          "Licenses": [
+            "NOASSERTION"
+          ]
+        },
+        {
+          "ID": "org.xmlunit:xmlunit-core:2.9.1",
+          "Name": "org.xmlunit:xmlunit-core",
+          "Identifier": {
+            "PURL": "pkg:maven/org.xmlunit/xmlunit-core@2.9.1",
+            "UID": "f52a6009f7c9f645"
+          },
+          "Version": "2.9.1",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        },
+        {
+          "ID": "org.yaml:snakeyaml:1.33",
+          "Name": "org.yaml:snakeyaml",
+          "Identifier": {
+            "PURL": "pkg:maven/org.yaml/snakeyaml@1.33",
+            "UID": "a5277e83235c3d8"
+          },
+          "Version": "1.33",
+          "Licenses": [
+            "Apache-2.0"
+          ]
+        }
+      ],
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2024-12798",
+          "PkgID": "ch.qos.logback:logback-core:1.2.13",
+          "PkgName": "ch.qos.logback:logback-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/ch.qos.logback/logback-core@1.2.13",
+            "UID": "6c9daf42b9338dc4"
+          },
+          "InstalledVersion": "1.2.13",
+          "FixedVersion": "1.5.13, 1.3.15",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-12798",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:e40579ceb08c21143334f46024644f1b0ccb046e69f92c67b6769fe6eb50a8cc",
+          "Title": "logback-core: arbitrary code execution via JaninoEventEvaluator",
+          "Description": "ACE vulnerability in JaninoEventEvaluator  by QOS.CH logback-core\n      upto including version 0.1 to 1.3.14 and 1.4.0 to 1.5.12 in Java applications allows\n      attacker to execute arbitrary code by compromising an existing\n      logback configuration file or by injecting an environment variable\n      before program execution.\n\n\n\n\n\nMalicious logback configuration files can allow the attacker to execute \narbitrary code using the JaninoEventEvaluator extension.\n\n\n\nA successful attack requires the user to have write access to a \nconfiguration file. Alternatively, the attacker could inject a malicious \nenvironment variable pointing to a malicious configuration file. In both \ncases, the attack requires existing privilege.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-917"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:H/A:L",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-12798",
+            "https://github.com/qos-ch/logback",
+            "https://github.com/qos-ch/logback/commit/2cb6d520df7592ef1c3a198f1b5df3c10c93e183",
+            "https://logback.qos.ch/news.html#1.3.15",
+            "https://logback.qos.ch/news.html#1.5.13",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-12798",
+            "https://www.cve.org/CVERecord?id=CVE-2024-12798"
+          ],
+          "PublishedDate": "2024-12-19T16:15:07.557Z",
+          "LastModifiedDate": "2025-01-03T14:15:24.37Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-11226",
+          "PkgID": "ch.qos.logback:logback-core:1.2.13",
+          "PkgName": "ch.qos.logback:logback-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/ch.qos.logback/logback-core@1.2.13",
+            "UID": "6c9daf42b9338dc4"
+          },
+          "InstalledVersion": "1.2.13",
+          "FixedVersion": "1.5.19, 1.3.16",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-11226",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:a519a224217fed6c61338511c6937e486694b1055022497062dc05c7a87be982",
+          "Title": "ch.qos.logback/logback-core: Conditional abitrary code execution in logback-core",
+          "Description": "ACE vulnerability in conditional configuration file processing  by QOS.CH logback-core up to and including version 1.5.18 in Java applications, allows an attacker to execute arbitrary code by compromising an existing logback configuration file or by injecting an environment variable before program execution.\n\n\n\nA successful attack requires the presence of Janino library and Spring Framework to be present on the user's class path. In addition, the attacker must  have write access to a \nconfiguration file. Alternatively, the attacker could inject a malicious \nenvironment variable pointing to a malicious configuration file. In both \ncases, the attack requires existing privilege.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:H/I:L/A:L",
+              "V3Score": 6.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-11226",
+            "https://github.com/qos-ch/logback",
+            "https://github.com/qos-ch/logback/commit/61f6a2544f36b3016e0efd434ee21f19269f1df7",
+            "https://github.com/qos-ch/logback/issues/974",
+            "https://github.com/qos-ch/logback/releases/tag/v_1.5.19",
+            "https://logback.qos.ch/news.html#1.3.16",
+            "https://logback.qos.ch/news.html#1.5.19",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-11226",
+            "https://www.cve.org/CVERecord?id=CVE-2025-11226"
+          ],
+          "PublishedDate": "2025-10-01T08:15:31.25Z",
+          "LastModifiedDate": "2025-10-31T15:15:41.197Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-12801",
+          "PkgID": "ch.qos.logback:logback-core:1.2.13",
+          "PkgName": "ch.qos.logback:logback-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/ch.qos.logback/logback-core@1.2.13",
+            "UID": "6c9daf42b9338dc4"
+          },
+          "InstalledVersion": "1.2.13",
+          "FixedVersion": "1.5.13, 1.3.15",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-12801",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:f5cf3bf43570f324f5a8138fbbbed420f07d37652c84a396f88ba7d734c41467",
+          "Title": "logback-core: SaxEventRecorder vulnerable to Server-Side Request Forgery (SSRF) attacks",
+          "Description": "Server-Side Request Forgery (SSRF) in SaxEventRecorder by QOS.CH logback version 0.1 to 1.3.14 and 1.4.0 to 1.5.12  on the Java platform, allows an attacker to \nforge requests by compromising logback configuration files in XML.\n\n\n\nThe attacks involves the modification of DOCTYPE declaration in  XML configuration files.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-918"
+          ],
+          "VendorSeverity": {
+            "ghsa": 1,
+            "redhat": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:N",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-12801",
+            "https://github.com/qos-ch/logback",
+            "https://github.com/qos-ch/logback/commit/5f05041cba4c4ac0a62748c5c527a2da48999f2d",
+            "https://logback.qos.ch/news.html#1.3.15",
+            "https://logback.qos.ch/news.html#1.5.13",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-12801",
+            "https://www.cve.org/CVERecord?id=CVE-2024-12801"
+          ],
+          "PublishedDate": "2024-12-19T17:15:08.93Z",
+          "LastModifiedDate": "2025-01-03T14:15:24.5Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-52999",
+          "PkgID": "com.fasterxml.jackson.core:jackson-core:2.13.5",
+          "PkgName": "com.fasterxml.jackson.core:jackson-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.13.5",
+            "UID": "cbce0079aead0d4f"
+          },
+          "InstalledVersion": "2.13.5",
+          "FixedVersion": "2.15.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-52999",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:4ade0e3475574099b460206cd5d92906f62daa15667927b47f1f0df85cc2f07d",
+          "Title": "com.fasterxml.jackson.core/jackson-core: jackson-core Potential StackoverflowError",
+          "Description": "jackson-core contains core low-level incremental (\"streaming\") parser and generator abstractions used by Jackson Data Processor. In versions prior to 2.15.0, if a user parses an input file and it has deeply nested data, Jackson could end up throwing a StackoverflowError if the depth is particularly large. jackson-core 2.15.0 contains a configurable limit for how deep Jackson will traverse in an input document, defaulting to an allowable depth of 1000. jackson-core will throw a StreamConstraintsException if the limit is reached. jackson-databind also benefits from this change because it uses jackson-core to parse JSON inputs. As a workaround, users should avoid parsing input files from untrusted sources.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-121"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 2,
+            "ghsa": 3,
+            "oracle-oval": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2025:12280",
+            "https://access.redhat.com/security/cve/CVE-2025-52999",
+            "https://bugzilla.redhat.com/2374804",
+            "https://errata.almalinux.org/9/ALSA-2025-12280.html",
+            "https://github.com/FasterXML/jackson-core",
+            "https://github.com/FasterXML/jackson-core/pull/943",
+            "https://github.com/FasterXML/jackson-core/security/advisories/GHSA-h46c-h94j-95f3",
+            "https://linux.oracle.com/cve/CVE-2025-52999.html",
+            "https://linux.oracle.com/errata/ELSA-2025-14126.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-52999",
+            "https://www.cve.org/CVERecord?id=CVE-2025-52999"
+          ],
+          "PublishedDate": "2025-06-25T17:15:39.82Z",
+          "LastModifiedDate": "2025-06-26T18:57:43.67Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-45868",
+          "PkgID": "com.h2database:h2:2.1.214",
+          "PkgName": "com.h2database:h2",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.h2database/h2@2.1.214",
+            "UID": "7ee8a0ddbbd3e3cb"
+          },
+          "InstalledVersion": "2.1.214",
+          "FixedVersion": "2.2.220",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-45868",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:f4f781f638257c684b341a09f3c7379fd5d1652f5ef396257d0c0262862f4031",
+          "Title": "The web-based admin console in H2 Database Engine before 2.2.220 can b ...",
+          "Description": "The web-based admin console in H2 Database Engine before 2.2.220 can be started via the CLI with the argument -webAdminPassword, which allows the user to specify the password in cleartext for the web admin console. Consequently, a local user (or an attacker that has obtained local access through some means) would be able to discover the password by listing processes and their arguments. NOTE: the vendor states \"This is not a vulnerability of H2 Console ... Passwords should never be passed on the command line and every qualified DBA or system administrator is expected to know that.\" Nonetheless, the issue was fixed in 2.2.220.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-312"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "nvd": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 7.8
+            }
+          },
+          "References": [
+            "https://github.com/advisories/GHSA-22wj-vf5f-wrvj",
+            "https://github.com/h2database/h2database",
+            "https://github.com/h2database/h2database/blob/96832bf5a97cdc0adc1f2066ed61c54990d66ab5/h2/src/main/org/h2/server/web/WebServer.java#L346-L347",
+            "https://github.com/h2database/h2database/commit/581ed18ff9d6b3761d851620ed88a3994a351a0d",
+            "https://github.com/h2database/h2database/issues/3686",
+            "https://github.com/h2database/h2database/pull/3833",
+            "https://github.com/h2database/h2database/releases/tag/version-2.2.220",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-45868",
+            "https://sites.google.com/sonatype.com/vulnerabilities/sonatype-2022-6243"
+          ],
+          "PublishedDate": "2022-11-23T21:15:11.36Z",
+          "LastModifiedDate": "2024-11-21T07:29:52.05Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-51074",
+          "PkgID": "com.jayway.jsonpath:json-path:2.7.0",
+          "PkgName": "com.jayway.jsonpath:json-path",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.jayway.jsonpath/json-path@2.7.0",
+            "UID": "8282a7940150f0c1"
+          },
+          "InstalledVersion": "2.7.0",
+          "FixedVersion": "2.9.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-51074",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:873a3fcbc03f578bede62acb1a4b3b1de59f96eca10373c67ac78311278dde88",
+          "Title": "json-path: stack-based buffer overflow in Criteria.parse method",
+          "Description": "json-path v2.8.0 was discovered to contain a stack overflow via the Criteria.parse() method.",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ghsa": 2,
+            "nvd": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-51074",
+            "https://github.com/json-path/JsonPath",
+            "https://github.com/json-path/JsonPath/commit/71a09c1193726c010917f1157ecbb069ad6c3e3b",
+            "https://github.com/json-path/JsonPath/issues/973",
+            "https://github.com/json-path/JsonPath/releases/tag/json-path-2.9.0",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-51074",
+            "https://www.cve.org/CVERecord?id=CVE-2023-51074"
+          ],
+          "PublishedDate": "2023-12-27T21:15:08.253Z",
+          "LastModifiedDate": "2025-09-12T18:45:08.097Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-22102",
+          "PkgID": "com.mysql:mysql-connector-j:8.0.33",
+          "PkgName": "com.mysql:mysql-connector-j",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/com.mysql/mysql-connector-j@8.0.33",
+            "UID": "a6042ab8be95490"
+          },
+          "InstalledVersion": "8.0.33",
+          "FixedVersion": "8.2.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-22102",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:f38742e2592f8575b1bc9e5b0480deecf2c2240099c3e272dd73c90ea986bc9b",
+          "Title": "mysql-connector-java: Connector/J unspecified vulnerability (CPU October 2023)",
+          "Description": "Vulnerability in the MySQL Connectors product of Oracle MySQL (component: Connector/J).  Supported versions that are affected are 8.1.0 and prior. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise MySQL Connectors.  Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in MySQL Connectors, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in takeover of MySQL Connectors. CVSS 3.1 Base Score 8.3 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-284"
+          ],
+          "VendorSeverity": {
+            "cbl-mariner": 3,
+            "ghsa": 3,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V3Score": 8.4
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "V3Score": 8.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-22102",
+            "https://github.com/mysql/mysql-connector-j",
+            "https://github.com/mysql/mysql-connector-j/compare/8.1.0...8.2.0",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-22102",
+            "https://security.netapp.com/advisory/ntap-20231027-0007",
+            "https://security.netapp.com/advisory/ntap-20231027-0007/",
+            "https://www.cve.org/CVERecord?id=CVE-2023-22102",
+            "https://www.oracle.com/security-alerts/cpuoct2023.html",
+            "https://www.oracle.com/security-alerts/cpuoct2023.html#AppendixMSQL"
+          ],
+          "PublishedDate": "2023-10-17T22:15:15.1Z",
+          "LastModifiedDate": "2025-03-06T17:15:16.437Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-61795",
+          "PkgID": "org.apache.tomcat.embed:tomcat-embed-core:9.0.109",
+          "PkgName": "org.apache.tomcat.embed:tomcat-embed-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@9.0.109",
+            "UID": "6e38067a2c2c4c65"
+          },
+          "InstalledVersion": "9.0.109",
+          "FixedVersion": "11.0.12, 10.1.47, 9.0.110",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-61795",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:4b03059efa180f1ea7adcc0e7ae5cb11b3360c7bd91171d79bff95f7475290f6",
+          "Title": "tomcat: org.apache.tomcat/tomcat-catalina: Apache Tomcat: Denial of service",
+          "Description": "Improper Resource Shutdown or Release vulnerability in Apache Tomcat.\n\nIf an error occurred (including exceeding limits) during the processing of a multipart upload, temporary copies of the uploaded parts written to disc were not cleaned up immediately but left for the garbage collection process to delete. Depending on JVM settings, application memory usage and application load, it was possible that space for the temporary copies of uploaded parts would be filled faster than GC cleared it, leading to a DoS.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.11, from 10.1.0-M1 through 10.1.46, from 9.0.0.M1 through 9.0.109.\n\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.0 though 8.5.100. Other, older, EOL versions may also be affected.\nUsers are recommended to upgrade to version 11.0.12 or later, 10.1.47 or later or 9.0.110 or later which fixes the issue.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-404"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "bitnami": 2,
+            "ghsa": 1,
+            "redhat": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2025/10/27/6",
+            "https://access.redhat.com/security/cve/CVE-2025-61795",
+            "https://github.com/apache/tomcat",
+            "https://github.com/apache/tomcat/commit/1cdf5f730ede75a0759492f179ac21ca4ff68e06",
+            "https://github.com/apache/tomcat/commit/af6e9181620304c0d818121c29c074e1330610d0",
+            "https://github.com/apache/tomcat/commit/afa422bd7ca1eef0f507259c682fd876494d9c3b",
+            "https://lists.apache.org/thread/wm9mx8brmx9g4zpywm06ryrtvd3160pp",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-61795",
+            "https://tomcat.apache.org/security-10.html#Fixed_in_Apache_Tomcat_10.1.47",
+            "https://tomcat.apache.org/security-11.html#Fixed_in_Apache_Tomcat_11.0.12",
+            "https://tomcat.apache.org/security-9.html#Fixed_in_Apache_Tomcat_9.0.110",
+            "https://www.cve.org/CVERecord?id=CVE-2025-61795"
+          ],
+          "PublishedDate": "2025-10-27T18:15:44.2Z",
+          "LastModifiedDate": "2025-11-14T16:53:33.3Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-22235",
+          "PkgID": "org.springframework.boot:spring-boot:2.7.18-spring-boot-2.7.30",
+          "PkgName": "org.springframework.boot:spring-boot",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework.boot/spring-boot@2.7.18-spring-boot-2.7.30",
+            "UID": "4fcedc7642f92eda"
+          },
+          "InstalledVersion": "2.7.18-spring-boot-2.7.30",
+          "FixedVersion": "3.3.11, 3.4.5",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-22235",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:1c89db28aa92ab08f4e5c8fa94f2e8f31416e01d169c274e53227f184c61268b",
+          "Title": "org.springframework.boot/spring-boot: Spring Boot EndpointRequest.to() creates wrong matcher if actuator endpoint is not exposed",
+          "Description": "EndpointRequest.to() creates a matcher for null/** if the actuator endpoint, for which the EndpointRequest has been created, is disabled or not exposed.\n\nYour application may be affected by this if all the following conditions are met:\n\n  *  You use Spring Security\n  *  EndpointRequest.to() has been used in a Spring Security chain configuration\n  *  The endpoint which EndpointRequest references is disabled or not exposed via web\n  *  Your application handles requests to /null and this path needs protection\n\n\nYou are not affected if any of the following is true:\n\n  *  You don't use Spring Security\n  *  You don't use EndpointRequest.to()\n  *  The endpoint which EndpointRequest.to() refers to is enabled and is exposed\n  *  Your application does not handle requests to /null or this path does not need protection",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-20"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 7.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "V3Score": 7.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-22235",
+            "https://github.com/advisories/GHSA-rc42-6c7j-7h5r",
+            "https://github.com/spring-projects/spring-boot",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-22235",
+            "https://security.netapp.com/advisory/ntap-20250516-0010",
+            "https://security.netapp.com/advisory/ntap-20250516-0010/",
+            "https://spring.io/security/cve-2025-22235",
+            "https://www.cve.org/CVERecord?id=CVE-2025-22235"
+          ],
+          "PublishedDate": "2025-04-28T08:15:15.273Z",
+          "LastModifiedDate": "2025-05-16T23:15:19.6Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-38820",
+          "PkgID": "org.springframework:spring-context:5.3.39-spring-framework-5.3.48",
+          "PkgName": "org.springframework:spring-context",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-context@5.3.39-spring-framework-5.3.48",
+            "UID": "bee5045ad23868d9"
+          },
+          "InstalledVersion": "5.3.39-spring-framework-5.3.48",
+          "FixedVersion": "6.1.14",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-38820",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:ab01b324ebbbfd7e2726a1212befb5419e158ebd4c976fb73cfdcd618f5fd23e",
+          "Title": "The fix for CVE-2022-22968 made disallowedFieldspatterns in DataBinder ...",
+          "Description": "The fix for CVE-2022-22968 made disallowedFields patterns in DataBinder case insensitive. However, String.toLowerCase() has some Locale dependent exceptions that could potentially result in fields not protected as expected.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-178"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "nvd": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/commit/23656aebc6c7d0f9faff1080981eb4d55eff296c",
+            "https://github.com/spring-projects/spring-framework/commits/v6.2.0-RC2",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-38820",
+            "https://security.netapp.com/advisory/ntap-20241129-0003",
+            "https://security.netapp.com/advisory/ntap-20241129-0003/",
+            "https://spring.io/security/cve-2024-38820"
+          ],
+          "PublishedDate": "2024-10-18T06:15:03.333Z",
+          "LastModifiedDate": "2024-11-29T12:15:07.007Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-41249",
+          "PkgID": "org.springframework:spring-core:5.3.39-spring-framework-5.3.48",
+          "PkgName": "org.springframework:spring-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-core@5.3.39-spring-framework-5.3.48",
+            "UID": "dacc47ffd2262799"
+          },
+          "InstalledVersion": "5.3.39-spring-framework-5.3.48",
+          "FixedVersion": "6.2.11",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-41249",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:535d8003e8eb373baa492a48c55d8be787daf83b674432f078645df7dd9856d2",
+          "Title": "org.springframework/spring-core: Spring Framework Annotation Detection Vulnerability",
+          "Description": "The Spring Framework annotation detection mechanism may not correctly resolve annotations on methods within type hierarchies with a parameterized super type with unbounded generics. This can be an issue if such annotations are used for authorization decisions.\n\nYour application may be affected by this if you are using Spring Security's @EnableMethodSecurity feature.\n\nYou are not affected by this if you are not using @EnableMethodSecurity or if you do not use security annotations on methods in generic superclasses or generic interfaces.\n\nThis CVE is published in conjunction with  CVE-2025-41248 https://spring.io/security/cve-2025-41248 .",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-285"
+          ],
+          "VendorSeverity": {
+            "ghsa": 3,
+            "redhat": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-41249",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/commit/6d710d482a6785b069e35022e81758953afc21ff",
+            "https://github.com/spring-projects/spring-framework/issues/35342",
+            "https://github.com/spring-projects/spring-framework/releases/tag/v6.2.11",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-41249",
+            "https://spring.io/security/cve-2025-41249",
+            "https://www.cve.org/CVERecord?id=CVE-2025-41249"
+          ],
+          "PublishedDate": "2025-09-16T11:15:30.887Z",
+          "LastModifiedDate": "2025-09-16T20:15:35.127Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2016-1000027",
+          "PkgID": "org.springframework:spring-web:5.3.39-spring-framework-5.3.48",
+          "PkgName": "org.springframework:spring-web",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-web@5.3.39-spring-framework-5.3.48",
+            "UID": "8f50673e3ac52dc"
+          },
+          "InstalledVersion": "5.3.39-spring-framework-5.3.48",
+          "FixedVersion": "6.0.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-1000027",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:ee4e21dc08ebd430c7014a0194f8724f737d12c89ff801665df60128dc872933",
+          "Title": "spring: HttpInvokerServiceExporter readRemoteInvocation method untrusted java deserialization",
+          "Description": "Pivotal Spring Framework through 5.3.16 suffers from a potential remote code execution (RCE) issue if used for Java deserialization of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and authentication may be required. NOTE: the vendor's position is that untrusted data is not an intended use case. The product's behavior will not be changed because some users rely on deserialization of trusted data.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "ghsa": 4,
+            "nvd": 4,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 7.5,
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V2Score": 6.8,
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2016-1000027",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-1000027",
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/commit/2b051b8b321768a4cfef83077db65c6328ffd60f",
+            "https://github.com/spring-projects/spring-framework/commit/5cbe90b2cd91b866a5a9586e460f311860e11cfa",
+            "https://github.com/spring-projects/spring-framework/issues/21680",
+            "https://github.com/spring-projects/spring-framework/issues/24434",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-1231625331",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-579669626",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-582313417",
+            "https://github.com/spring-projects/spring-framework/issues/24434#issuecomment-744519525",
+            "https://jira.spring.io/browse/SPR-17143?redirect=false",
+            "https://nvd.nist.gov/vuln/detail/CVE-2016-1000027",
+            "https://raw.githubusercontent.com/distributedweaknessfiling/cvelist/master/2016/1000xxx/CVE-2016-1000027.json",
+            "https://security-tracker.debian.org/tracker/CVE-2016-1000027",
+            "https://security.netapp.com/advisory/ntap-20230420-0009",
+            "https://security.netapp.com/advisory/ntap-20230420-0009/",
+            "https://spring.io/blog/2022/05/11/spring-framework-5-3-20-and-5-2-22-available-now",
+            "https://support.contrastsecurity.com/hc/en-us/articles/4402400830612-Spring-web-Java-Deserialization-CVE-2016-1000027",
+            "https://www.cve.org/CVERecord?id=CVE-2016-1000027",
+            "https://www.tenable.com/security/research/tra-2016-20"
+          ],
+          "PublishedDate": "2020-01-02T23:15:11.857Z",
+          "LastModifiedDate": "2024-11-21T02:42:50.717Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-38820",
+          "PkgID": "org.springframework:spring-web:5.3.39-spring-framework-5.3.48",
+          "PkgName": "org.springframework:spring-web",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-web@5.3.39-spring-framework-5.3.48",
+            "UID": "8f50673e3ac52dc"
+          },
+          "InstalledVersion": "5.3.39-spring-framework-5.3.48",
+          "FixedVersion": "6.1.14",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-38820",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:b8540905d44d855842ba782e12815a504d91dff7f79f2ff7df129abce738ec24",
+          "Title": "The fix for CVE-2022-22968 made disallowedFieldspatterns in DataBinder ...",
+          "Description": "The fix for CVE-2022-22968 made disallowedFields patterns in DataBinder case insensitive. However, String.toLowerCase() has some Locale dependent exceptions that could potentially result in fields not protected as expected.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-178"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "nvd": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://github.com/spring-projects/spring-framework",
+            "https://github.com/spring-projects/spring-framework/commit/23656aebc6c7d0f9faff1080981eb4d55eff296c",
+            "https://github.com/spring-projects/spring-framework/commits/v6.2.0-RC2",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-38820",
+            "https://security.netapp.com/advisory/ntap-20241129-0003",
+            "https://security.netapp.com/advisory/ntap-20241129-0003/",
+            "https://spring.io/security/cve-2024-38820"
+          ],
+          "PublishedDate": "2024-10-18T06:15:03.333Z",
+          "LastModifiedDate": "2024-11-29T12:15:07.007Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-38828",
+          "PkgID": "org.springframework:spring-webmvc:5.3.39-spring-framework-5.3.48",
+          "PkgName": "org.springframework:spring-webmvc",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-webmvc@5.3.39-spring-framework-5.3.48",
+            "UID": "3defb10434a81b9f"
+          },
+          "InstalledVersion": "5.3.39-spring-framework-5.3.48",
+          "FixedVersion": "5.3.42",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-38828",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:e4b74ca57cd2197adf520e203cbc27c86da1fd0b1a414ce448b1f2ea33ccf868",
+          "Title": "org.springframework:spring-webmvc: DoS via Spring MVC controller method with byte[] parameter",
+          "Description": "Spring MVC controller methods with an @RequestBody byte[] method parameter are vulnerable to a DoS attack.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-400"
+          ],
+          "VendorSeverity": {
+            "ghsa": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-38828",
+            "https://github.com/spring-projects/spring-framework",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-38828",
+            "https://security.netapp.com/advisory/ntap-20250509-0009",
+            "https://security.netapp.com/advisory/ntap-20250509-0009/",
+            "https://spring.io/security/cve-2024-38828",
+            "https://www.cve.org/CVERecord?id=CVE-2024-38828"
+          ],
+          "PublishedDate": "2024-11-18T04:15:04.233Z",
+          "LastModifiedDate": "2025-05-09T20:15:38.413Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-41242",
+          "PkgID": "org.springframework:spring-webmvc:5.3.39-spring-framework-5.3.48",
+          "PkgName": "org.springframework:spring-webmvc",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.springframework/spring-webmvc@5.3.39-spring-framework-5.3.48",
+            "UID": "3defb10434a81b9f"
+          },
+          "InstalledVersion": "5.3.39-spring-framework-5.3.48",
+          "FixedVersion": "6.2.10",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-41242",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:5078c8ec11e5d991296c50a07acd3400d9416b40709c8d22dd2ed60b4e17b140",
+          "Title": "org.springframework/spring-webmvc: Spring Framework MVC path traversal vulnerability",
+          "Description": "Spring Framework MVC applications can be vulnerable to a “Path Traversal Vulnerability” when deployed on a non-compliant Servlet container.\n\nAn application can be vulnerable when all the following are true:\n\n  *  the application is deployed as a WAR or with an embedded Servlet container\n  *  the Servlet container  does not reject suspicious sequences https://jakarta.ee/specifications/servlet/6.1/jakarta-servlet-spec-6.1.html#uri-path-canonicalization \n  *  the application  serves static resources https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-config/static-resources.html#page-title  with Spring resource handling\n\n\nWe have verified that applications deployed on Apache Tomcat or Eclipse Jetty are not vulnerable, as long as default security features are not disabled in the configuration. Because we cannot check exploits against all Servlet containers and configuration variants, we strongly recommend upgrading your application.",
+          "Severity": "MEDIUM",
+          "VendorSeverity": {
+            "ghsa": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://spring.io/security/cve-2025-41242",
+            "https://access.redhat.com/security/cve/CVE-2025-41242",
+            "https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-config/static-resources.html#page-title",
+            "https://github.com/spring-projects/spring-framework",
+            "https://jakarta.ee/specifications/servlet/6.1/jakarta-servlet-spec-6.1.html#uri-path-canonicalization",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-41242",
+            "https://www.cve.org/CVERecord?id=CVE-2025-41242"
+          ],
+          "PublishedDate": "2025-08-18T09:15:28.637Z",
+          "LastModifiedDate": "2025-08-18T20:16:28.75Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-31573",
+          "PkgID": "org.xmlunit:xmlunit-core:2.9.1",
+          "PkgName": "org.xmlunit:xmlunit-core",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.xmlunit/xmlunit-core@2.9.1",
+            "UID": "f52a6009f7c9f645"
+          },
+          "InstalledVersion": "2.9.1",
+          "FixedVersion": "2.10.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-31573",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:277e84c7e8c684a40bc74e03ac4c7666efd354053549e85f6378f4de9f8f7f8d",
+          "Title": "org.xmlunit/xmlunit-core: XMLUnit Insecure Defaults when Processing XSLT Stylesheets",
+          "Description": "XMLUnit for Java before 2.10.0, in the default configuration, might allow code execution via an untrusted stylesheet (used for an XSLT transformation), because XSLT extension functions are enabled.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-669"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "ghsa": 1,
+            "redhat": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "V3Score": 4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-31573",
+            "https://docs.oracle.com/en/java/javase/22/security/java-api-xml-processing-jaxp-security-guide.html#GUID-E345AA09-801E-4B95-B83D-7F0C452538AA",
+            "https://github.com/advisories/GHSA-chfm-68vv-pvw5",
+            "https://github.com/xmlunit/xmlunit",
+            "https://github.com/xmlunit/xmlunit/commit/b81d48b71dfd2868bdfc30a3e17ff973f32bc15b",
+            "https://github.com/xmlunit/xmlunit/issues/264",
+            "https://github.com/xmlunit/xmlunit/security/advisories/GHSA-chfm-68vv-pvw5",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-31573",
+            "https://www.cve.org/CVERecord?id=CVE-2024-31573"
+          ],
+          "PublishedDate": "2025-10-17T19:15:36.627Z",
+          "LastModifiedDate": "2025-10-21T19:31:50.02Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-1471",
+          "PkgID": "org.yaml:snakeyaml:1.33",
+          "PkgName": "org.yaml:snakeyaml",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.yaml/snakeyaml@1.33",
+            "UID": "a5277e83235c3d8"
+          },
+          "InstalledVersion": "1.33",
+          "FixedVersion": "2.0",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-1471",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:7ba1873a16ea65c4b1e8e42e9357a0d80141d7b180fc67caf094b4e41601d0bb",
+          "Title": "SnakeYaml: Constructor Deserialization Remote Code Execution",
+          "Description": "SnakeYaml's Constructor() class does not restrict types which can be instantiated during deserialization. Deserializing yaml content provided by an attacker can lead to remote code execution. We recommend using SnakeYaml's SafeConsturctor when parsing untrusted content to restrict deserialization. We recommend upgrading to version 2.0 and beyond.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-20",
+            "CWE-502"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "ghsa": 3,
+            "nvd": 4,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "rocky": 3
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+              "V3Score": 8.3
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "http://packetstormsecurity.com/files/175095/PyTorch-Model-Server-Registration-Deserialization-Remote-Code-Execution.html",
+            "http://www.openwall.com/lists/oss-security/2023/11/19/1",
+            "https://access.redhat.com/errata/RHSA-2022:9058",
+            "https://access.redhat.com/security/cve/CVE-2022-1471",
+            "https://bitbucket.org/snakeyaml/snakeyaml",
+            "https://bitbucket.org/snakeyaml/snakeyaml/commits/5014df1a36f50aca54405bb8433bc99a8847f758",
+            "https://bitbucket.org/snakeyaml/snakeyaml/commits/acc44099f5f4af26ff86b4e4e4cc1c874e2dc5c4",
+            "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64581479",
+            "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64634374",
+            "https://bitbucket.org/snakeyaml/snakeyaml/issues/561/cve-2022-1471-vulnerability-in#comment-64876314",
+            "https://bitbucket.org/snakeyaml/snakeyaml/wiki/CVE-2022-1471",
+            "https://bugzilla.redhat.com/2150009",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2150009",
+            "https://confluence.atlassian.com/security/cve-2022-1471-snakeyaml-library-rce-vulnerability-in-multiple-products-1296171009.html",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1471",
+            "https://errata.almalinux.org/8/ALSA-2022-9058.html",
+            "https://errata.rockylinux.org/RLSA-2022:9058",
+            "https://github.com/google/security-research/security/advisories/GHSA-mjmj-j48q-9wg2",
+            "https://github.com/mbechler/marshalsec",
+            "https://groups.google.com/g/kubernetes-security-announce/c/mwrakFaEdnc",
+            "https://infosecwriteups.com/%EF%B8%8F-inside-the-160-comment-fight-to-fix-snakeyamls-rce-default-1a20c5ca4d4c",
+            "https://linux.oracle.com/cve/CVE-2022-1471.html",
+            "https://linux.oracle.com/errata/ELSA-2022-9058-1.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-1471",
+            "https://security.netapp.com/advisory/ntap-20230818-0015",
+            "https://security.netapp.com/advisory/ntap-20230818-0015/",
+            "https://security.netapp.com/advisory/ntap-20240621-0006",
+            "https://security.netapp.com/advisory/ntap-20240621-0006/",
+            "https://snyk.io/blog/unsafe-deserialization-snakeyaml-java-cve-2022-1471",
+            "https://www.cve.org/CVERecord?id=CVE-2022-1471",
+            "https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true"
+          ],
+          "PublishedDate": "2022-12-01T11:15:10.553Z",
+          "LastModifiedDate": "2025-06-18T09:15:47.243Z"
+        }
+      ]
+    }
+  ]
+}

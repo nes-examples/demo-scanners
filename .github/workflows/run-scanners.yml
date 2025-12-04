@@ -1,0 +1,69 @@
+name: Run Security Scanners
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      # Needed for scorecard to run locally with provenance metadata.
+      id-token: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install Syft and Grype
+        run: |
+          set -euo pipefail
+          curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sudo sh -s -- -b /usr/local/bin
+          curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sudo sh -s -- -b /usr/local/bin
+
+      - name: Install Trivy
+        run: |
+          set -euo pipefail
+          curl -sSfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sudo sh -s -- -b /usr/local/bin
+
+      - name: Install OSV Scanner
+        run: |
+          set -euo pipefail
+          curl -sSfL "https://github.com/google/osv-scanner/releases/download/v2.3.0/osv-scanner_linux_amd64" -o osv-scanner
+          chmod +x osv-scanner
+          sudo mv osv-scanner /usr/local/bin/osv-scanner
+
+      - name: Install Dependency-Check
+        run: |
+          set -euo pipefail
+          dc_version="$(curl -s https://dependency-check.github.io/DependencyCheck/current.txt)"
+          curl -Ls "https://github.com/dependency-check/DependencyCheck/releases/download/v${dc_version}/dependency-check-${dc_version}-release.zip" --output dc.zip
+          sudo unzip -q dc.zip -d /opt/dependency-check
+          sudo ln -sf /opt/dependency-check/dependency-check/bin/dependency-check.sh /usr/local/bin/dependency-check
+
+      - name: Install OpenSSF Scorecard
+        run: |
+          set -euo pipefail
+          scorecard_version="5.4.0"
+          url="https://github.com/ossf/scorecard/releases/download/v${scorecard_version}/scorecard_${scorecard_version}_linux_amd64.tar.gz"
+          curl -sSfL "$url" | tar -xz
+          sudo mv scorecard /usr/local/bin/scorecard
+
+      - name: Run scanners against SBOMs
+        env:
+          GRYPE_DB_AUTO_UPDATE: "true"
+        run: ./run-all-scans-on-sboms.sh
+
+# TODO: This can take A LOT of time beacuse of the vulnerability deps
+#      - name: Run scanners against source
+#        env:
+#          GRYPE_DB_AUTO_UPDATE: "true"
+#        run: ./run-all-scans-on-app.sh
