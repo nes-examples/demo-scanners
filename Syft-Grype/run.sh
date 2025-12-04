@@ -6,6 +6,7 @@ log() {
   echo "[syft-grype] $*" >&2
 }
 
+# Print CLI usage help.
 usage() {
   cat <<'EOF'
 Generate SBOMs with Syft and scan them with Grype for OSS and NES Spring PetClinic branches.
@@ -17,6 +18,7 @@ Optional (defaults shown):
   --nes-branch  Branch/tag for NES PetClinic (default: nes-2.7.x)
   --workdir     Base dir to clone into (default: <repo-root>/local-clones)
   --out         Where to write SBOMs/results (default: <script-dir>/syft-grype-output)
+  --grype-config Grype config file with ignore rules (default: <repo-root>/exclusions/grype-ignore.yaml if present)
 
 Example:
   ./run.sh
@@ -36,6 +38,7 @@ OSS_REPO="https://github.com/neverendingsupport/nes-spring-petclinic.git"
 OSS_BRANCH="OSS"
 NES_REPO="https://github.com/neverendingsupport/nes-spring-petclinic.git"
 NES_BRANCH="nes-2.7.x"
+GRYPE_CONFIG=""
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -45,6 +48,7 @@ while [[ $# -gt 0 ]]; do
     --nes-branch) NES_BRANCH="$2"; shift 2;;
     --workdir) WORKDIR="$2"; shift 2;;
     --out) OUT_DIR="$2"; shift 2;;
+    --grype-config) GRYPE_CONFIG="$2"; shift 2;;
     -h|--help) usage; exit 0;;
     *) echo "Unknown arg: $1" >&2; usage; exit 1;;
   esac
@@ -61,6 +65,10 @@ fi
 
 if [[ -z "$WORKDIR" ]]; then
   WORKDIR="$ROOT_DIR/local-clones"
+fi
+
+if [[ -z "$GRYPE_CONFIG" && -f "$ROOT_DIR/exclusions/grype-ignore.yaml" ]]; then
+  GRYPE_CONFIG="$ROOT_DIR/exclusions/grype-ignore.yaml"
 fi
 
 mkdir -p "$WORKDIR"
@@ -83,6 +91,7 @@ ensure_repo() {
   fi
 }
 
+# Create a CycloneDX SBOM for a given source directory.
 generate_sbom() {
   local label="$1" dir="$2"
   local sbom="$OUT_DIR/${label}-petclinic-sbom.cdx.json"
@@ -91,11 +100,16 @@ generate_sbom() {
   echo "$sbom"
 }
 
+# Scan a generated SBOM with grype, optionally using a config file.
 scan_sbom() {
   local label="$1" sbom="$2"
   local outfile="$OUT_DIR/${label}-petclinic-grype.json"
   log "Scanning SBOM $sbom -> $outfile"
-  grype "sbom:${sbom}" --output json > "$outfile"
+  local args=("sbom:${sbom}" --output json)
+  if [[ -n "$GRYPE_CONFIG" ]]; then
+    args+=(--config "$GRYPE_CONFIG")
+  fi
+  grype "${args[@]}" > "$outfile"
   log "Wrote $outfile"
 }
 

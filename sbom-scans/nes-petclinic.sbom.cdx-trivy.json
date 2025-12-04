@@ -1,7 +1,7 @@
 {
   "SchemaVersion": 2,
-  "ReportID": "019ae53e-3ff8-70ae-ae0a-d8e5cb12ea90",
-  "CreatedAt": "2025-12-03T18:24:13.432046947+01:00",
+  "ReportID": "019ae9de-73af-7142-a815-65e4b80e34ea",
+  "CreatedAt": "2025-12-04T15:57:41.295084188+01:00",
   "ArtifactName": "/home/marcin/repo/demo-scanners/nes-petclinic.sbom.cdx.json",
   "ArtifactType": "cyclonedx",
   "Results": [
@@ -1701,60 +1701,6 @@
           ],
           "PublishedDate": "2025-06-25T17:15:39.82Z",
           "LastModifiedDate": "2025-06-26T18:57:43.67Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2022-45868",
-          "PkgID": "com.h2database:h2:2.1.214",
-          "PkgName": "com.h2database:h2",
-          "PkgIdentifier": {
-            "PURL": "pkg:maven/com.h2database/h2@2.1.214?type=jar",
-            "UID": "cf4335c7c431e098",
-            "BOMRef": "pkg:maven/com.h2database/h2@2.1.214?type=jar"
-          },
-          "InstalledVersion": "2.1.214",
-          "FixedVersion": "2.2.220",
-          "Status": "fixed",
-          "SeveritySource": "ghsa",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-45868",
-          "DataSource": {
-            "ID": "ghsa",
-            "Name": "GitHub Security Advisory Maven",
-            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
-          },
-          "Fingerprint": "sha256:f4f781f638257c684b341a09f3c7379fd5d1652f5ef396257d0c0262862f4031",
-          "Title": "The web-based admin console in H2 Database Engine before 2.2.220 can b ...",
-          "Description": "The web-based admin console in H2 Database Engine before 2.2.220 can be started via the CLI with the argument -webAdminPassword, which allows the user to specify the password in cleartext for the web admin console. Consequently, a local user (or an attacker that has obtained local access through some means) would be able to discover the password by listing processes and their arguments. NOTE: the vendor states \"This is not a vulnerability of H2 Console ... Passwords should never be passed on the command line and every qualified DBA or system administrator is expected to know that.\" Nonetheless, the issue was fixed in 2.2.220.",
-          "Severity": "HIGH",
-          "CweIDs": [
-            "CWE-312"
-          ],
-          "VendorSeverity": {
-            "ghsa": 3,
-            "nvd": 3
-          },
-          "CVSS": {
-            "ghsa": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 7.8
-            },
-            "nvd": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 7.8
-            }
-          },
-          "References": [
-            "https://github.com/advisories/GHSA-22wj-vf5f-wrvj",
-            "https://github.com/h2database/h2database",
-            "https://github.com/h2database/h2database/blob/96832bf5a97cdc0adc1f2066ed61c54990d66ab5/h2/src/main/org/h2/server/web/WebServer.java#L346-L347",
-            "https://github.com/h2database/h2database/commit/581ed18ff9d6b3761d851620ed88a3994a351a0d",
-            "https://github.com/h2database/h2database/issues/3686",
-            "https://github.com/h2database/h2database/pull/3833",
-            "https://github.com/h2database/h2database/releases/tag/version-2.2.220",
-            "https://nvd.nist.gov/vuln/detail/CVE-2022-45868",
-            "https://sites.google.com/sonatype.com/vulnerabilities/sonatype-2022-6243"
-          ],
-          "PublishedDate": "2022-11-23T21:15:11.36Z",
-          "LastModifiedDate": "2024-11-21T07:29:52.05Z"
         },
         {
           "VulnerabilityID": "CVE-2023-22102",

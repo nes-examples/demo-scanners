@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Basic logger.
 log() {
   echo "[grype] $*"
 }
 
+# Print CLI usage help.
 usage() {
   cat <<'EOF'
 Run Anchore Grype on OSS and NES Spring PetClinic branches.
@@ -16,6 +18,7 @@ Optional (defaults shown):
   --nes-branch  Branch/tag for NES PetClinic (default: nes-2.7.x)
   --workdir     Base dir to clone into (default: <repo-root>/local-clones)
   --out         Where to write reports (default: <script-dir>/grype-output)
+  --grype-config Grype config file with ignore rules (default: <repo-root>/exclusions/grype-ignore.yaml if present)
 
 Example:
   ./run.sh
@@ -35,6 +38,7 @@ OSS_REPO="https://github.com/neverendingsupport/nes-spring-petclinic.git"
 OSS_BRANCH="OSS"
 NES_REPO="https://github.com/neverendingsupport/nes-spring-petclinic.git"
 NES_BRANCH="nes-2.7.x"
+GRYPE_CONFIG=""
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -44,6 +48,7 @@ while [[ $# -gt 0 ]]; do
     --nes-branch) NES_BRANCH="$2"; shift 2;;
     --workdir) WORKDIR="$2"; shift 2;;
     --out) OUT_DIR="$2"; shift 2;;
+    --grype-config) GRYPE_CONFIG="$2"; shift 2;;
     -h|--help) usage; exit 0;;
     *) echo "Unknown arg: $1" >&2; usage; exit 1;;
   esac
@@ -58,9 +63,14 @@ if [[ -z "$WORKDIR" ]]; then
   WORKDIR="$ROOT_DIR/local-clones"
 fi
 
+if [[ -z "$GRYPE_CONFIG" && -f "$ROOT_DIR/exclusions/grype-ignore.yaml" ]]; then
+  GRYPE_CONFIG="$ROOT_DIR/exclusions/grype-ignore.yaml"
+fi
+
 mkdir -p "$WORKDIR"
 mkdir -p "$OUT_DIR"
 
+# Clone or refresh a target repo.
 ensure_repo() {
   local repo="$1" branch="$2" target="$3"
   if [[ -d "$target/.git" ]]; then
@@ -78,11 +88,16 @@ ensure_repo() {
   fi
 }
 
+# Run grype against a source directory.
 scan_dir() {
   local label="$1" dir="$2"
   local outfile="$OUT_DIR/${label}-petclinic-grype.json"
   log "Scanning $dir -> $outfile"
-  grype "dir:${dir}" --output json > "$outfile"
+  local args=("dir:${dir}" --output json)
+  if [[ -n "$GRYPE_CONFIG" ]]; then
+    args+=(--config "$GRYPE_CONFIG")
+  fi
+  grype "${args[@]}" > "$outfile"
   log "Wrote $outfile"
 }
 

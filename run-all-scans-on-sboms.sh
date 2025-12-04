@@ -4,7 +4,7 @@ set -euo pipefail
 # Run SBOM-aware scanners against one or more SBOM files (CycloneDX or SPDX).
 usage() {
   cat <<'EOF'
-Usage: ./run-all-scans-on-sboms.sh [--sbom <path>]... [--out <dir>] [--osv-config <path>]
+Usage: ./run-all-scans-on-sboms.sh [--sbom <path>]... [--out <dir>] [--osv-config <path>] [--grype-config <path>] [--trivy-vex <path>] [--trivy-ignore <path>]
 
 Defaults:
   --sbom        Defaults to oss/nes petclinic SBOMs in both CycloneDX and SPDX if present:
@@ -12,7 +12,10 @@ Defaults:
                 oss-petclinic.sbom.spdx.json, nes-petclinic.sbom.spdx.json
   --out         ./sbom-scans
   OSV_FAIL_ON_ERROR=false (env) to keep going if osv-scanner cannot reach the API (e.g., offline)
-  --osv-config  Optional TOML config for osv-scanner (e.g., exclusions for NES).
+  --grype-config   Grype config file (default: ./exclusions/grype-ignore.yaml if it exists; contains ignore rules)
+  --trivy-vex      OpenVEX file for trivy (default: ./exclusions/openvex-not-affected.json if it exists)
+  --trivy-ignore   Trivy ignore file (default: ./exclusions/trivy.ignore if it exists)
+  --osv-config     TOML config for osv-scanner (default: ./exclusions/osv-scanner.toml if it exists)
 
 Tools used (if installed):
   - grype:  grype sbom <file> -> JSON
@@ -25,6 +28,9 @@ EOF
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 OUT_DIR="$SCRIPT_DIR/sbom-scans"
 OSV_CONFIG=""
+GRYPE_CONFIG_FILE=""
+TRIVY_VEX_FILE=""
+TRIVY_IGNORE_FILE=""
 SBOMS=()
 
 while [[ $# -gt 0 ]]; do
@@ -32,10 +38,32 @@ while [[ $# -gt 0 ]]; do
     --sbom) SBOMS+=("$2"); shift 2;;
     --out) OUT_DIR="$2"; shift 2;;
     --osv-config) OSV_CONFIG="$2"; shift 2;;
+    --grype-config) GRYPE_CONFIG_FILE="$2"; shift 2;;
+    --trivy-ignore) TRIVY_IGNORE_FILE="$2"; shift 2;;
+    --trivy-vex) TRIVY_VEX_FILE="$2"; shift 2;;
     -h|--help) usage; exit 0;;
     *) echo "Unknown arg: $1" >&2; usage; exit 1;;
   esac
 done
+
+# Apply defaults for ignore/config files if not provided explicitly.
+DEFAULT_OSV_CONFIG="$SCRIPT_DIR/exclusions/osv-scanner.toml"
+DEFAULT_VEX="$SCRIPT_DIR/exclusions/openvex-not-affected.json"
+DEFAULT_GRYPE_CONFIG="$SCRIPT_DIR/exclusions/grype-ignore.yaml"
+DEFAULT_TRIVY_IGNORE="$SCRIPT_DIR/exclusions/trivy.ignore"
+
+if [[ -z "$OSV_CONFIG" && -f "$DEFAULT_OSV_CONFIG" ]]; then
+  OSV_CONFIG="$DEFAULT_OSV_CONFIG"
+fi
+if [[ -z "$GRYPE_CONFIG_FILE" && -f "$DEFAULT_GRYPE_CONFIG" ]]; then
+  GRYPE_CONFIG_FILE="$DEFAULT_GRYPE_CONFIG"
+fi
+if [[ -z "$TRIVY_VEX_FILE" && -f "$DEFAULT_VEX" ]]; then
+  TRIVY_VEX_FILE="$DEFAULT_VEX"
+fi
+if [[ -z "$TRIVY_IGNORE_FILE" && -f "$DEFAULT_TRIVY_IGNORE" ]]; then
+  TRIVY_IGNORE_FILE="$DEFAULT_TRIVY_IGNORE"
+fi
 
 if [[ ${#SBOMS[@]} -eq 0 ]]; then
   for candidate in \
@@ -65,6 +93,11 @@ log() {
   echo "[scan-sboms] $*"
 }
 
+warn() {
+  echo "[scan-sboms][WARN] $*" >&2
+}
+
+# Pretty-print JSON outputs when jq is present.
 format_json() {
   local file="$1"
   local tmp="${file}.tmp"
@@ -80,6 +113,7 @@ format_json() {
   fi
 }
 
+# Run grype against an SBOM, applying ignore rules if provided.
 run_grype() {
   local sbom="$1" label="$2"
   local outfile="$OUT_DIR/${label}-grype.json"
@@ -88,12 +122,19 @@ run_grype() {
     exit 1
   fi
   log "grype sbom -> $outfile"
+  # Build args so we can append ignore rules when present.
+  local source="sbom:${sbom}"
+  local args=("$source" --output json)
+  if [[ -n "$GRYPE_CONFIG_FILE" ]]; then
+    args+=(--config "$GRYPE_CONFIG_FILE")
+  fi
   GRYPE_DB_AUTO_UPDATE=${GRYPE_DB_AUTO_UPDATE:-false} \
   GRYPE_CHECK_FOR_APP_UPDATE=${GRYPE_CHECK_FOR_APP_UPDATE:-false} \
-    grype "sbom:${sbom}" --output json > "$outfile"
+    grype "${args[@]}" > "$outfile"
   format_json "$outfile"
 }
 
+# Run trivy against an SBOM, applying VEX if provided.
 run_trivy() {
   local sbom="$1" label="$2"
   local outfile="$OUT_DIR/${label}-trivy.json"
@@ -102,10 +143,18 @@ run_trivy() {
     exit 1
   fi
   log "trivy sbom -> $outfile"
-  trivy sbom "$sbom" --format json --output "$outfile"
+  local args=(sbom "$sbom" --format json --output "$outfile")
+  if [[ -n "$TRIVY_VEX_FILE" ]]; then
+    args+=(--vex "$TRIVY_VEX_FILE")
+  fi
+  if [[ -n "$TRIVY_IGNORE_FILE" ]]; then
+    args+=(--ignorefile "$TRIVY_IGNORE_FILE")
+  fi
+  trivy "${args[@]}"
   format_json "$outfile"
 }
 
+# Run osv-scanner against an SBOM, applying TOML config if provided.
 run_osv() {
   local sbom="$1" label="$2"
   local outfile="$OUT_DIR/${label}-osv.txt"

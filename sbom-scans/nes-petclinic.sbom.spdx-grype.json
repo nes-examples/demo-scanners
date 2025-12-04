@@ -1008,160 +1008,6 @@
     },
     {
       "vulnerability": {
-        "id": "GHSA-22wj-vf5f-wrvj",
-        "dataSource": "https://github.com/advisories/GHSA-22wj-vf5f-wrvj",
-        "namespace": "github:language:java",
-        "severity": "High",
-        "urls": [],
-        "description": "Password exposure in H2 Database",
-        "cvss": [
-          {
-            "type": "Secondary",
-            "version": "3.1",
-            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-            "metrics": {
-              "baseScore": 7.8,
-              "exploitabilityScore": 1.9,
-              "impactScore": 5.9
-            },
-            "vendorMetadata": {}
-          }
-        ],
-        "epss": [
-          {
-            "cve": "CVE-2022-45868",
-            "epss": 0.00096,
-            "percentile": 0.27196,
-            "date": "2025-12-02"
-          }
-        ],
-        "cwes": [
-          {
-            "cve": "CVE-2022-45868",
-            "cwe": "CWE-312",
-            "source": "nvd@nist.gov",
-            "type": "Primary"
-          }
-        ],
-        "fix": {
-          "versions": [
-            "2.2.220"
-          ],
-          "state": "fixed",
-          "available": [
-            {
-              "version": "2.2.220",
-              "date": "2023-07-08",
-              "kind": "first-observed"
-            }
-          ]
-        },
-        "advisories": [],
-        "risk": 0.07344
-      },
-      "relatedVulnerabilities": [
-        {
-          "id": "CVE-2022-45868",
-          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-45868",
-          "namespace": "nvd:cpe",
-          "severity": "High",
-          "urls": [
-            "https://github.com/advisories/GHSA-22wj-vf5f-wrvj",
-            "https://github.com/h2database/h2database/blob/96832bf5a97cdc0adc1f2066ed61c54990d66ab5/h2/src/main/org/h2/server/web/WebServer.java#L346-L347",
-            "https://github.com/h2database/h2database/issues/3686",
-            "https://github.com/h2database/h2database/pull/3833",
-            "https://github.com/h2database/h2database/releases/tag/version-2.2.220",
-            "https://sites.google.com/sonatype.com/vulnerabilities/sonatype-2022-6243"
-          ],
-          "description": "The web-based admin console in H2 Database Engine before 2.2.220 can be started via the CLI with the argument -webAdminPassword, which allows the user to specify the password in cleartext for the web admin console. Consequently, a local user (or an attacker that has obtained local access through some means) would be able to discover the password by listing processes and their arguments. NOTE: the vendor states \"This is not a vulnerability of H2 Console ... Passwords should never be passed on the command line and every qualified DBA or system administrator is expected to know that.\" Nonetheless, the issue was fixed in 2.2.220.",
-          "cvss": [
-            {
-              "source": "nvd@nist.gov",
-              "type": "Primary",
-              "version": "3.1",
-              "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-              "metrics": {
-                "baseScore": 7.8,
-                "exploitabilityScore": 1.9,
-                "impactScore": 5.9
-              },
-              "vendorMetadata": {}
-            },
-            {
-              "source": "cve@mitre.org",
-              "type": "Secondary",
-              "version": "3.1",
-              "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-              "metrics": {
-                "baseScore": 8.4,
-                "exploitabilityScore": 2.6,
-                "impactScore": 5.9
-              },
-              "vendorMetadata": {}
-            }
-          ],
-          "epss": [
-            {
-              "cve": "CVE-2022-45868",
-              "epss": 0.00096,
-              "percentile": 0.27196,
-              "date": "2025-12-02"
-            }
-          ],
-          "cwes": [
-            {
-              "cve": "CVE-2022-45868",
-              "cwe": "CWE-312",
-              "source": "nvd@nist.gov",
-              "type": "Primary"
-            }
-          ]
-        }
-      ],
-      "matchDetails": [
-        {
-          "type": "exact-direct-match",
-          "matcher": "java-matcher",
-          "searchedBy": {
-            "language": "java",
-            "namespace": "github:language:java",
-            "package": {
-              "name": "com.h2database:h2",
-              "version": "2.1.214"
-            }
-          },
-          "found": {
-            "vulnerabilityID": "GHSA-22wj-vf5f-wrvj",
-            "versionConstraint": ">=1.4.198,<2.2.220 (unknown)"
-          },
-          "fix": {
-            "suggestedVersion": "2.2.220"
-          }
-        }
-      ],
-      "artifact": {
-        "id": "-5f6c272c0",
-        "name": "H2 Database Engine",
-        "version": "2.1.214",
-        "type": "java-archive",
-        "locations": null,
-        "language": "java",
-        "licenses": [],
-        "cpes": [],
-        "purl": "pkg:maven/com.h2database/h2@2.1.214",
-        "upstreams": [],
-        "metadataType": "JavaMetadata",
-        "metadata": {
-          "virtualPath": "",
-          "pomArtifactID": "h2",
-          "pomGroupID": "com.h2database",
-          "manifestName": "",
-          "archiveDigests": null
-        }
-      }
-    },
-    {
-      "vulnerability": {
         "id": "GHSA-rc42-6c7j-7h5r",
         "dataSource": "https://github.com/advisories/GHSA-rc42-6c7j-7h5r",
         "namespace": "github:language:java",
@@ -2291,6 +2137,169 @@
       }
     }
   ],
+  "ignoredMatches": [
+    {
+      "vulnerability": {
+        "id": "GHSA-22wj-vf5f-wrvj",
+        "dataSource": "https://github.com/advisories/GHSA-22wj-vf5f-wrvj",
+        "namespace": "github:language:java",
+        "severity": "High",
+        "urls": [],
+        "description": "Password exposure in H2 Database",
+        "cvss": [
+          {
+            "type": "Secondary",
+            "version": "3.1",
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+            "metrics": {
+              "baseScore": 7.8,
+              "exploitabilityScore": 1.9,
+              "impactScore": 5.9
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2022-45868",
+            "epss": 0.00096,
+            "percentile": 0.27196,
+            "date": "2025-12-02"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2022-45868",
+            "cwe": "CWE-312",
+            "source": "nvd@nist.gov",
+            "type": "Primary"
+          }
+        ],
+        "fix": {
+          "versions": [
+            "2.2.220"
+          ],
+          "state": "fixed",
+          "available": [
+            {
+              "version": "2.2.220",
+              "date": "2023-07-08",
+              "kind": "first-observed"
+            }
+          ]
+        },
+        "advisories": [],
+        "risk": 0.07344
+      },
+      "relatedVulnerabilities": [
+        {
+          "id": "CVE-2022-45868",
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-45868",
+          "namespace": "nvd:cpe",
+          "severity": "High",
+          "urls": [
+            "https://github.com/advisories/GHSA-22wj-vf5f-wrvj",
+            "https://github.com/h2database/h2database/blob/96832bf5a97cdc0adc1f2066ed61c54990d66ab5/h2/src/main/org/h2/server/web/WebServer.java#L346-L347",
+            "https://github.com/h2database/h2database/issues/3686",
+            "https://github.com/h2database/h2database/pull/3833",
+            "https://github.com/h2database/h2database/releases/tag/version-2.2.220",
+            "https://sites.google.com/sonatype.com/vulnerabilities/sonatype-2022-6243"
+          ],
+          "description": "The web-based admin console in H2 Database Engine before 2.2.220 can be started via the CLI with the argument -webAdminPassword, which allows the user to specify the password in cleartext for the web admin console. Consequently, a local user (or an attacker that has obtained local access through some means) would be able to discover the password by listing processes and their arguments. NOTE: the vendor states \"This is not a vulnerability of H2 Console ... Passwords should never be passed on the command line and every qualified DBA or system administrator is expected to know that.\" Nonetheless, the issue was fixed in 2.2.220.",
+          "cvss": [
+            {
+              "source": "nvd@nist.gov",
+              "type": "Primary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "metrics": {
+                "baseScore": 7.8,
+                "exploitabilityScore": 1.9,
+                "impactScore": 5.9
+              },
+              "vendorMetadata": {}
+            },
+            {
+              "source": "cve@mitre.org",
+              "type": "Secondary",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "metrics": {
+                "baseScore": 8.4,
+                "exploitabilityScore": 2.6,
+                "impactScore": 5.9
+              },
+              "vendorMetadata": {}
+            }
+          ],
+          "epss": [
+            {
+              "cve": "CVE-2022-45868",
+              "epss": 0.00096,
+              "percentile": 0.27196,
+              "date": "2025-12-02"
+            }
+          ],
+          "cwes": [
+            {
+              "cve": "CVE-2022-45868",
+              "cwe": "CWE-312",
+              "source": "nvd@nist.gov",
+              "type": "Primary"
+            }
+          ]
+        }
+      ],
+      "matchDetails": [
+        {
+          "type": "exact-direct-match",
+          "matcher": "java-matcher",
+          "searchedBy": {
+            "language": "java",
+            "namespace": "github:language:java",
+            "package": {
+              "name": "com.h2database:h2",
+              "version": "2.1.214"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "GHSA-22wj-vf5f-wrvj",
+            "versionConstraint": ">=1.4.198,<2.2.220 (unknown)"
+          },
+          "fix": {
+            "suggestedVersion": "2.2.220"
+          }
+        }
+      ],
+      "artifact": {
+        "id": "-5f6c272c0",
+        "name": "H2 Database Engine",
+        "version": "2.1.214",
+        "type": "java-archive",
+        "locations": null,
+        "language": "java",
+        "licenses": [],
+        "cpes": [],
+        "purl": "pkg:maven/com.h2database/h2@2.1.214",
+        "upstreams": [],
+        "metadataType": "JavaMetadata",
+        "metadata": {
+          "virtualPath": "",
+          "pomArtifactID": "h2",
+          "pomGroupID": "com.h2database",
+          "manifestName": "",
+          "archiveDigests": null
+        }
+      },
+      "appliedIgnoreRules": [
+        {
+          "vulnerability": "GHSA-22wj-vf5f-wrvj",
+          "reason": "H2 console only enabled for dev/test; not exposed in packaged PetClinic",
+          "namespace": ""
+        }
+      ]
+    }
+  ],
   "source": {
     "type": "sbom-file",
     "target": "/home/marcin/repo/demo-scanners/nes-petclinic.sbom.spdx.json"
@@ -2323,6 +2332,24 @@
         "indexed-archives": true
       },
       "ignore": [
+        {
+          "vulnerability": "GHSA-22wj-vf5f-wrvj",
+          "include-aliases": false,
+          "reason": "H2 console only enabled for dev/test; not exposed in packaged PetClinic",
+          "namespace": "",
+          "fix-state": "",
+          "package": {
+            "name": "",
+            "version": "",
+            "language": "",
+            "type": "",
+            "location": "",
+            "upstream-name": ""
+          },
+          "vex-status": "",
+          "vex-justification": "",
+          "match-type": ""
+        },
         {
           "vulnerability": "",
           "include-aliases": false,
@@ -2549,6 +2576,6 @@
         }
       }
     },
-    "timestamp": "2025-12-03T18:24:53.763853866+01:00"
+    "timestamp": "2025-12-04T15:57:52.680931398+01:00"
   }
 }

@@ -1,0 +1,83 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "https://demo-scanners.local/vex/2025/h2-not-affected",
+  "author": "demo-scanners maintainers",
+  "timestamp": "2025-01-27T00:00:00Z",
+  "version": 1,
+  "statements": [
+    {
+      "@id": "urn:demo-scanners:statement:h2-ghsa-22wj-vf5f-wrvj",
+      "vulnerability": {
+        "name": "GHSA-22wj-vf5f-wrvj",
+        "aliases": [
+          "CVE-2022-45868"
+        ]
+      },
+      "products": [
+        {
+          "@id": "pkg:maven/org.springframework.samples/spring-petclinic@2.7.30?type=jar",
+          "subcomponents": [
+            { "@id": "pkg:maven/com.h2database/h2@2.1.214?type=jar" }
+            , { "@id": "pkg:maven/com.h2database/h2@2.1.214" }
+          ]
+        }
+      ],
+      "status": "not_affected",
+      "justification": "requires_configuration",
+      "statusNotes": "H2 console is only enabled for local dev/test and not exposed in packaged PetClinic deployments. Provided for scanners that support VEX."
+    },
+    {
+      "@id": "urn:demo-scanners:statement:h2-cve-2022-45868",
+      "vulnerability": {
+        "name": "CVE-2022-45868",
+        "aliases": [
+          "GHSA-22wj-vf5f-wrvj"
+        ]
+      },
+      "products": [
+        {
+          "@id": "pkg:maven/org.springframework.samples/spring-petclinic@2.7.30?type=jar",
+          "subcomponents": [
+            { "@id": "pkg:maven/com.h2database/h2@2.1.214?type=jar" }
+            , { "@id": "pkg:maven/com.h2database/h2@2.1.214" }
+          ]
+        }
+      ],
+      "status": "not_affected",
+      "justification": "requires_configuration",
+      "statusNotes": "Alias statement for scanners that key on CVE instead of GHSA."
+    },
+    {
+      "@id": "urn:demo-scanners:statement:h2-ghsa-22wj-vf5f-wrvj-h2product",
+      "vulnerability": {
+        "name": "GHSA-22wj-vf5f-wrvj",
+        "aliases": [
+          "CVE-2022-45868"
+        ]
+      },
+      "products": [
+        { "@id": "pkg:maven/com.h2database/h2@2.1.214?type=jar" },
+        { "@id": "pkg:maven/com.h2database/h2@2.1.214" }
+      ],
+      "status": "not_affected",
+      "justification": "requires_configuration",
+      "statusNotes": "Direct product statement to help SPDX/VEX matching for H2."
+    },
+    {
+      "@id": "urn:demo-scanners:statement:h2-cve-2022-45868-h2product",
+      "vulnerability": {
+        "name": "CVE-2022-45868",
+        "aliases": [
+          "GHSA-22wj-vf5f-wrvj"
+        ]
+      },
+      "products": [
+        { "@id": "pkg:maven/com.h2database/h2@2.1.214?type=jar" },
+        { "@id": "pkg:maven/com.h2database/h2@2.1.214" }
+      ],
+      "status": "not_affected",
+      "justification": "requires_configuration",
+      "statusNotes": "Direct product statement to help SPDX/VEX matching for H2."
+    }
+  ]
+}
