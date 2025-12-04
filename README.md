@@ -12,6 +12,11 @@ demo-scanners/
 
 ```
 
+## Helper Scripts
+
+- `run-all-scans-on-app.sh`: walks each scanner directory in this repo and runs its `run.sh`, letting every tool scan the local Spring PetClinic source tree in one go.
+- `run-all-scans-on-sboms.sh`: runs SBOM-capable tools (grype, trivy, osv-scanner) against the provided SBOMs (defaults to the checked-in OSS/NES CycloneDX + SPDX files) and drops results in `./sbom-scans`.
+
 ## Regenerating the SBOMs
 
 ### Source Code
