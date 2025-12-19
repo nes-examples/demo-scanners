@@ -129,7 +129,7 @@ log "Using workdir $WORKDIR and output dir $OUT_DIR"
 ensure_repo "$OSS_REPO" "$OSS_BRANCH" "$OSS_DIR"
 ensure_repo "$NES_REPO" "$NES_BRANCH" "$NES_DIR"
 
-# run_audit "oss" "$OSS_DIR"
+run_audit "oss" "$OSS_DIR"
 run_audit "nes" "$NES_DIR"
 
 log "Done. Reports in $OUT_DIR"
