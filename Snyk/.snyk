@@ -108,3 +108,65 @@ ignore:
         # https://www.herodevs.com/vulnerability-directory/cve-2025-41242?nes-for-spring
         reason: 'HeroDevs Remediated in 5.3.39-spring-framework-5.3.48'
 
+  'SNYK-JAVA-ORGAPACHETOMCATEMBED-13723930':
+    - '*':
+        # CVE-2025-61795
+        reason: 'Remediated version is a dependency of 2.7.18-spring-boot-2.7.32'
+        # https://docs.herodevs.com/spring/release-notes/spring-boot#2-7-32
+
+  'SNYK-JAVA-ORGAPACHETOMCATEMBED-15307781':
+    - '*':
+        # CVE-2025-66614
+        reason: 'Remediated version is a dependency of 2.7.18-spring-boot-2.7.33'
+        # https://docs.herodevs.com/spring/release-notes/spring-boot#2-7-33
+
+  'SNYK-JAVA-ORGAPACHETOMCATEMBED-15307825':
+    - '*':
+        # CVE-2026-24733
+        reason: 'Remediated version is a dependency of 2.7.18-spring-boot-2.7.33'
+        # https://docs.herodevs.com/spring/release-notes/spring-boot#2-7-33
+
+  'SNYK-JAVA-ORGAPACHETOMCATEMBED-15307822':
+    - '*':
+        # CVE-2026-24734
+        reason: 'Remediated version is a dependency of 2.7.18-spring-boot-2.7.34'
+        # https://docs.herodevs.com/spring/release-notes/spring-boot#2-7-34
+
+  # --- Separate NES products (not NES for Spring) ---
+
+  'SNYK-JAVA-COMH2DATABASE-3146851':
+    - '*':
+        # CVE-2022-45868
+        # https://www.herodevs.com/vulnerability-directory/cve-2022-45868
+        reason: 'HeroDevs Remediated in NES for H2 (separate product)'
+
+  'SNYK-JAVA-COMFASTERXMLJACKSONCORE-10500754':
+    - '*':
+        # CVE-2025-52999
+        # https://www.herodevs.com/vulnerability-directory/cve-2025-52999
+        reason: 'HeroDevs Remediated in NES for Jackson Core v2.13.6 (separate product)'
+
+  'SNYK-JAVA-COMMYSQL-6075938':
+    - '*':
+        # CVE-2023-22102
+        # https://www.herodevs.com/vulnerability-directory/cve-2023-22102
+        reason: 'HeroDevs Remediated in NES for MySQL Connector/J 8.0.34 (separate product)'
+
+  'SNYK-JAVA-ORGYAML-3152153':
+    - '*':
+        # CVE-2022-1471
+        # https://www.herodevs.com/vulnerability-directory/cve-2022-1471
+        reason: 'HeroDevs Remediated in NES for SnakeYAML v1.34.0 (separate product)'
+
+  'SNYK-JAVA-COMFASTERXMLJACKSONCORE-7569538':
+    - '*':
+        # DoS via deeply nested input (no CVE assigned)
+        # https://docs.herodevs.com/jackson
+        reason: 'HeroDevs Remediated in NES for Jackson Core v2.13.6 (separate product)'
+
+  'SNYK-JAVA-COMFASTERXMLJACKSONCORE-15365924':
+    - '*':
+        # Resource Allocation without limits (no CVE assigned)
+        # https://docs.herodevs.com/jackson
+        reason: 'HeroDevs Remediated in NES for Jackson Core v2.13.6 (separate product)'
+
